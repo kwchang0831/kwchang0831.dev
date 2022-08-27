@@ -6,12 +6,11 @@ published: 2022-05-18 GMT08:00
 updated: 2022-05-18 GMT08:00
 cover: ./cover.avif
 coverText: 'Cover Photo by <a href="https://unsplash.com/@aamir_in?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" rel="nofollow noopener noreferrer external" target="_blank">Aamir Suhail</a> on <a href="https://unsplash.com/photos/ATlRqTCbvV4" rel="nofollow noopener noreferrer external" target="_blank">Unsplash</a>'
-series_title: '#Learn-Elixir 系列'
-series_name: ⚡ 讓我們一起學 Elixir 🧪
+series_tag: 'Learn-Elixir'
+series_title: ⚡ 讓我們一起學 Elixir 🧪
 tags:
   - Year: 2022
   - Language: 中文
-  - 系列: Learn-Elixir
   - Elixir
 ---
 

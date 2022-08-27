@@ -5,12 +5,11 @@ summary: Elixir 安裝流程，包含使用 asdf 版本管理器來安裝 Elixir
 published: 2022-05-11 GMT08:00
 updated: 2022-05-11 GMT08:00
 cover: ./cover.avif
-series_title: '#Learn-Elixir 系列'
-series_name: ⚡ 讓我們一起學 Elixir 🧪
+series_tag: 'Learn-Elixir'
+series_title: ⚡ 讓我們一起學 Elixir 🧪
 tags:
   - Year: 2022
   - Language: 中文
-  - 系列: Learn-Elixir
   - Ubuntu
   - macOS
   - Windows
