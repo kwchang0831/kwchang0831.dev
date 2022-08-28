@@ -66,7 +66,7 @@
           }
         }}
         placeholder="Filter Tags"
-        class="my2 px2 py1 bg-transparent border-2 border-x-2 border-black dark:border-white/[0.5] rounded flex-1" />
+        class="my2 px2 py1 bg-transparent border-2 border-x-2 border-black/[0.5] dark:border-white/[0.5] rounded flex-1" />
       {#if input && input.length > 0}
         <div
           class="absolute right-0 cursor-pointer w10 h8 rounded flex items-center justify-center"
