@@ -59,6 +59,12 @@
       <input
         bind:value={input}
         on:input={debounce}
+        on:keydown={(e) => {
+          if (input.length > 0 && e.code === 'Escape') {
+            input = '';
+            handleInput();
+          }
+        }}
         placeholder="Filter Tags"
         class="my2 px2 py1 bg-transparent border-2 border-x-2 border-black dark:border-white/[0.5] rounded flex-1" />
       {#if input && input.length > 0}
