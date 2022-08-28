@@ -51,14 +51,27 @@
       class="select-none flex justify-between items-center border-b-2 border-black dark:border-white cursor-pointer"
       on:click={toggle}>
       <h2 class:expaned class="text-2xl my2">Tags</h2>
+
       <div
         class="{expaned ? 'i-tabler-fold-down' : 'i-tabler-fold-up'} display-inline-block !w-[1.75rem] !h-[1.75rem]" />
     </div>
-    <input
-      bind:value={input}
-      on:input={debounce}
-      placeholder="Filter Tags"
-      class="my2 px2 py1 bg-transparent border-2 border-x-2 border-black rounded-b" />
+    <form class="flex items-center relative">
+      <input
+        bind:value={input}
+        on:input={debounce}
+        placeholder="Filter Tags"
+        class="my2 px2 py1 bg-transparent border-2 border-x-2 border-black dark:border-white/[0.5] rounded flex-1" />
+      {#if input && input.length > 0}
+        <div
+          class="absolute right-0 cursor-pointer w10 h8 rounded flex items-center justify-center"
+          on:click={() => {
+            input = '';
+            handleInput();
+          }}>
+          <div class="i-carbon-close-filled !w6 !h6" />
+        </div>
+      {/if}
+    </form>
     {#key curTags}
       {#if expaned}
         <div transition:slide={{ duration: 300 }} class="pt2 pb4 select-none">
