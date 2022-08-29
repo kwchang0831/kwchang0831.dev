@@ -62,7 +62,7 @@
     out:fly={{ x: iW < 1280 ? 0 : -100, y: iW < 1280 ? 0 : 100, duration: 300 }}
     class="max-w-screen-md flex-1 relative ml6">
     <IndexProfile
-      class="flex flex-col gap2 items-center text-center xl:(items-end text-right sticky top-[5rem] min-w-[10rem])" />
+      class="flex flex-col gap2 items-center text-center xl:(items-end text-right py4 sticky top-[4rem] min-w-[10rem])" />
   </div>
 
   <div
@@ -76,6 +76,6 @@
     in:fly={{ x: 100, y: -100, duration: 300, delay: 300 }}
     out:fly={{ x: 100, y: 100, duration: 300 }}
     class="max-w-screen-md flex-1 relative mr6">
-    <Tags class="hidden max-w-[20rem] xl:(flex flex-col min-w-[12rem])" />
+    <Tags class="hidden max-w-[20rem] xl:(flex flex-col min-w-[12rem] sticky top-[4rem])" />
   </div>
 </div>
