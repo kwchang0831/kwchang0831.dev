@@ -56,7 +56,11 @@
   {/if}
 </svelte:head>
 
-<div class="flex flex-nowrap justify-center flex-col items-center xl:(flex-row items-stretch)">
+<div
+  itemscope
+  itemtype="https://schema.org/Blog"
+  itemprop="blog"
+  class="flex flex-nowrap justify-center flex-col items-center xl:(flex-row items-stretch)">
   <div
     in:fly={{ x: iW < 1280 ? 0 : -100, y: iW < 1280 ? 0 : -100, duration: 300, delay: 300 }}
     out:fly={{ x: iW < 1280 ? 0 : -100, y: iW < 1280 ? 0 : 100, duration: 300 }}
@@ -68,7 +72,7 @@
   <div
     in:fly={{ y: 100, duration: 300, delay: 300 }}
     out:fly={{ y: -100, duration: 300 }}
-    class="min-h-50vh flex-none w-full md:(rounded-2xl w-[55rem])">
+    class="h-feed min-h-50vh flex-none w-full md:(rounded-2xl w-[55rem])">
     <IndexPosts />
   </div>
 
