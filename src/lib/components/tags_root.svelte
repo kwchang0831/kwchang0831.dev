@@ -12,8 +12,8 @@
     expaned = !expaned;
   }
 
+  let curTags = $tagsAll;
   let originalTags = JSON.stringify($tagsAll);
-  let curTags = JSON.parse(originalTags);
   let timer: string | number | NodeJS.Timeout | undefined;
   let input: string;
   function handleInput() {
