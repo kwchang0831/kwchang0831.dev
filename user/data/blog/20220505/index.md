@@ -7,8 +7,6 @@ coverStyle: NONE
 published: 2022-05-05 GMT08:00
 updated: 2022-05-05 GMT08:00
 tags:
-  - Year: 2022
-  - Language: 中文
   - Blog
   - Urara
   - NextJS

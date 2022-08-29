@@ -7,8 +7,6 @@ updated: 2021-09-06 GMT08:00
 cover: ./cover.avif
 coverStyle: NONE
 tags:
-  - Year: 2021
-  - Language: 中文
   - 開發環境
   - Windows
   - Windows Terminal

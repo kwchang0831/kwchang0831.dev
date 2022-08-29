@@ -7,8 +7,6 @@ updated: 2022-05-12 GMT08:00
 cover: ./cover.avif
 coverStyle: NONE
 tags:
-  - Year: 2022
-  - Language: 中文
   - Blog
   - Urara
   - Netlify

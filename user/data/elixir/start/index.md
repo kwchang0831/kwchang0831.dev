@@ -9,8 +9,6 @@ coverText: 'Cover Photo by <a href="https://unsplash.com/@aamir_in?utm_source=un
 series_tag: 'Learn-Elixir'
 series_title: ⚡ 讓我們一起學 Elixir 🧪
 tags:
-  - Year: 2022
-  - Language: 中文
   - Elixir
 ---
 

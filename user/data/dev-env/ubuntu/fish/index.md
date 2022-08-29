@@ -7,8 +7,6 @@ updated: 2022-05-20 GMT08:00
 cover: ./cover.webp
 coverStyle: NONE
 tags:
-  - Year: 2022
-  - Language: 中文
   - 開發環境
   - Ubuntu
 ---

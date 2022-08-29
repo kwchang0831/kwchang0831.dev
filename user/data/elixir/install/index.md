@@ -8,8 +8,6 @@ cover: ./cover.avif
 series_tag: 'Learn-Elixir'
 series_title: ⚡ 讓我們一起學 Elixir 🧪
 tags:
-  - Year: 2022
-  - Language: 中文
   - Ubuntu
   - macOS
   - Windows
