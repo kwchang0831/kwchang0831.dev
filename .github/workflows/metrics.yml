@@ -18,4 +18,4 @@ jobs:
           plugin_pagespeed: yes
           plugin_pagespeed_detailed: yes
           plugin_pagespeed_token: ${{ secrets.PAGESPEED_TOKEN }}
-          plugin_pagespeed_url: https://svelte-qwer.vercel.app/
+          plugin_pagespeed_url: https://www.kwchang0831.dev/
