@@ -11,6 +11,8 @@
 
   import ImgBanner from '$lib/components/image_banner.svelte';
 
+  const numberPostsEager = 5;
+
   export let data: Post.Post;
   export let index: number;
 
@@ -68,6 +70,8 @@
     {#if data.cover && data.coverStyle !== 'NONE'}
       {#if data.coverStyle === 'IN'}
         <ImgBanner
+          loading={index < numberPostsEager ? 'eager' : 'lazy'}
+          decoding={index < numberPostsEager ? 'auto' : 'async'}
           src={data.cover}
           imgClass="z1 blur-sm op80 absolute object-cover w-full h-full transition transform duration-300 ease-in-out group-hover:(scale-110 blur-none)" />
         <div class="z2 px8 pt4 pb6 flex flex-col gap2 flex-1 dark:(bg-black/[0.5]) bg-white/[0.25]">
@@ -95,6 +99,8 @@
             <a href={data.slug} alt={data.title} class="cursor-pointer" itemprop="url">
               <ImgBanner
                 src={data.cover}
+                loading={index < numberPostsEager ? 'eager' : 'lazy'}
+                decoding={index < numberPostsEager ? 'auto' : 'async'}
                 imgClass="op90 group-hover:scale-110 transition transform duration-300 ease-in-out object-cover w-full h-full" />
             </a>
           </div>
