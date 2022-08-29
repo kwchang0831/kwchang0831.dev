@@ -13,6 +13,16 @@ tags:
   - Netlify
 ---
 
+:::tip 最新情報 2022/08/30
+
+<p class="text-2xl"><a href="https://github.com/kwchang0831/svelte-QWER" target="_blank" rel="noreferrer noopener">QWER</a></p>
+
+✒︎ 使用 SvelteKit 與 ❤ 打造的部落格生成器，簡單好用，好評推廣中。
+
+![preview](/svelte-qwer/preview.png)
+
+:::
+
 ## 開頭
 
 Urara 是使用 [Svelte](https://svelte.dev/) + [SvelteKit](https://kit.svelte.dev/) 打造而成的靜態網站生成器，又稱為 SSG (Static Site Generator)。
