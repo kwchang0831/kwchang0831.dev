@@ -6,13 +6,13 @@
 <a href="https://github.com/kwchang0831/kwchang0831.dev/discussions/categories/q-a"><img src="https://img.shields.io/badge/❓ Discussion-Q&A-informational" alt="Q&A"></a>
 </p>
 <p align="center">
-This is my personal blog site. Generated using <a href="https://svelte-qwer.vercel.app/">QWER</a>.
+This is my personal blog site. Generated using <a href="https://github.com/kwchang0831/svelte-QWER/">QWER</a>.
 </p>
 <p align="center">
 <a href="https://raw.githubusercontent.com/gist/kwchang0831/79a9f8a867a78757c9d3c8f61421e77b/raw/metrics.pagespeed.svg"><img style="float:middle" width="auto" alt="PAGESPEED" src="https://raw.githubusercontent.com/gist/kwchang0831/79a9f8a867a78757c9d3c8f61421e77b/raw/metrics.pagespeed.svg"></a>
 </p>
 
-## 🎉 Try QWER
+## 🎉 Try [QWER](https://github.com/kwchang0831/svelte-QWER/)
 
 ```bash
 npx degit kwchang0831/svelte-QWER my-blog

@@ -6,13 +6,13 @@
 <a href="https://github.com/kwchang0831/kwchang0831.dev/discussions/categories/q-a"><img src="https://img.shields.io/badge/❓ Discussion-Q&A-informational" alt="Q&A"></a>
 </p>
 <p align="center">
-這是我私人的部落格。 使用<a href="https://svelte-qwer.vercel.app/">QWER</a>生成。
+這是我私人的部落格。 使用<a href="https://github.com/kwchang0831/svelte-QWER/">QWER</a>生成。
 </p>
 <p align="center">
 <a href="https://raw.githubusercontent.com/gist/kwchang0831/79a9f8a867a78757c9d3c8f61421e77b/raw/metrics.pagespeed.svg"><img style="float:middle" width="auto" alt="PAGESPEED" src="https://raw.githubusercontent.com/gist/kwchang0831/79a9f8a867a78757c9d3c8f61421e77b/raw/metrics.pagespeed.svg"></a>
 </p>
 
-## 🎉 馬上嘗試看看 QWER
+## 🎉 馬上嘗試看看 [QWER](https://github.com/kwchang0831/svelte-QWER/)
 
 ```bash
 npx degit kwchang0831/svelte-QWER my-blog
