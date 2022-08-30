@@ -64,5 +64,5 @@ export const ImageConfig = {
     // },
   },
   // For original image without reszing
-  ExtraFormats: ['webp'],
+  ExtraFormats: ['avif'],
 };
