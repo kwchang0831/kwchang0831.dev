@@ -1,9 +1,9 @@
 <h1 align="center">👋 kwchang0831.dev</h1>
 <p align="center">
-<a href="README-zh.md"><img src="https://img.shields.io/badge/README-%E4%B8%AD%E6%96%87-lightgreen" alt="Readme"></a>
-<img src="https://img.shields.io/github/languages/top/kwchang0831/kwchang0831.dev?color=%23ff3e00" alt="Language" />
-<a href="https://github.com/kwchang0831/kwchang0831.dev/blob/main/LICENSE"><img alt="GitHub" src="https://img.shields.io/github/license/kwchang0831/kwchang0831.dev" alt="License"></a>
-<a href="https://github.com/kwchang0831/kwchang0831.dev/discussions/categories/q-a"><img src="https://img.shields.io/badge/❓ Discussion-Q&A-informational" alt="Q&A"></a>
+<a href="README-zh.md"><img src="https://img.shields.io/badge/README-%E4%B8%AD%E6%96%87-lightgreen?style=for-the-badge" alt="Readme"></a>
+<img src="https://img.shields.io/github/languages/top/kwchang0831/kwchang0831.dev?color=%23ff3e00&style=for-the-badge&logo=svelte" alt="Language" />
+<a href="https://github.com/kwchang0831/kwchang0831.dev/blob/main/LICENSE"><img alt="GitHub" src="https://img.shields.io/github/license/kwchang0831/kwchang0831.dev?style=for-the-badge" alt="License"></a>
+<a href="https://github.com/kwchang0831/kwchang0831.dev/discussions/categories/q-a"><img src="https://img.shields.io/badge/❓ Discussion-Q&A-informational?style=for-the-badge" alt="Q&A"></a>
 </p>
 <p align="center">
 This is my personal blog site. Generated using <a href="https://github.com/kwchang0831/svelte-QWER/">QWER</a>.

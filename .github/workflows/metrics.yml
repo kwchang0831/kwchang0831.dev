@@ -3,6 +3,7 @@ on:
   workflow_dispatch:
 jobs:
   pagespeed-metrics:
+    if: github.repository == 'kwchang0831/kwchang0831.dev'
     runs-on: ubuntu-latest
     steps:
       - name: 🍕 PageSpeed Report
