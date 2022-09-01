@@ -108,8 +108,3 @@ export const mobilenavConfig: DD.Nav = {
     },
   ],
 };
-
-export const videoplayerConfig = {
-  seekTime: 2,
-  controls: ['play', 'restart', 'progress', 'current-time', 'duration', 'fullscreen'],
-};
