@@ -38,7 +38,12 @@
               <a rel="noopener noreferrer external" target="_blank" href={info.homepage}>{info.homepage}</a>
             </p>
           </div>
-          <img class="flex-initial w-20 h-20 ml-auto rounded-xl" alt="owner_avatar" src={info.owner.avatar_url} />
+          <img
+            class="flex-initial w-20 h-20 ml-auto rounded-xl"
+            alt="owner_avatar"
+            src={info.owner.avatar_url}
+            loading="lazy"
+            decoding="async" />
         </div>
         <div class="flex items-center gap2">
           <div aria-label="github star">
