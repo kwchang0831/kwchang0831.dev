@@ -14,10 +14,6 @@ tags:
   - DaisyUI
 ---
 
-<script lang="ts">
-  import Github from '$custom/github.svelte'
-</script>
-
 ## 開頭
 
 本篇文章示範如何在新建立的 Phoenix 的 Project 裡整合 DartSass + Tailwind + DaisyUI。
@@ -322,6 +318,6 @@ mix phx.server
 
 我有創建了一個 Github Repo，有需要完整原始碼的可以去看看。
 
-<Github user="kwchang0831" repo="phoenix-dartSass-tailwind-daisyUI"/>
+[kwchang0831/phoenix-dartSass-tailwind-daisyUI](https://github.com/kwchang0831/demo-phoenix-dartSass-tailwind-daisyUI)
 
 ## 完結

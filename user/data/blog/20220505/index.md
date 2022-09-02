@@ -14,10 +14,6 @@ tags:
   - CloudFlare
 ---
 
-<script lang="ts">
-  import Github from '$custom/github.svelte'
-</script>
-
 ## 開始
 
 半年多前，我決定了要開始我的網誌寫作之旅。
@@ -65,7 +61,7 @@ Cloud Function 的部分我這邊就略過介紹，因為我並沒有碰得很�
 
 我最一開始架設網站使用的是 NextJS 的 SSG 功能來建置的，當時我在 Github 上找到一個很不錯的模板：
 
-<Github user="timlrx" repo="tailwind-nextjs-starter-blog"/>
+[timlrx/tailwind-nextjs-starter-blog](https://github.com/timlrx/tailwind-nextjs-starter-blog)
 
 效能非常好。
 

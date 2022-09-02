@@ -10,10 +10,6 @@ tags:
   - [QWER, Svelte, SvelteKit]
 ---
 
-<script lang="ts">
-  import Github from '$custom/github.svelte'
-</script>
-
 ## 開頭
 
 距今幾個月前，我無意間在 [SvelteThemes](https://sveltethemes.dev/) 找到了一個使用 [SvelteKit](https://kit.svelte.dev/) 寫的部落格生成器: [Urara](https://github.com/importantimport/urara)。換掉了我原來用 [Tailwind Nextjs Starter Blog](https://github.com/timlrx/tailwind-nextjs-starter-blog) 所架設的[部落格](https://kwchang0831-blog.vercel.app)。
@@ -101,4 +97,4 @@ QWER 的架構主要分成了兩部分
 
 最後，還望諸位先進大德，不忘吝嗇來幫我的 Github Repo 點個 Star ⭐ 鼓勵鼓勵一下。感謝再感謝🙏。
 
-<Github user="kwchang0831" repo="svelte-QWER"/>
+[kwchang0831/svelte-QWER](https://github.com/kwchang0831/svelte-QWER)

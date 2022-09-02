@@ -12,10 +12,6 @@ tags:
   - Gigalixir
 ---
 
-<script lang="ts">
-  import Github from '$custom/github.svelte'
-</script>
-
 ## 開頭
 
 說實話，對於 Elxiir / Phoenix APP 的 Deployment 部署來說，說簡單其實也不簡單。好在現在市面上越來越多工具與平台幫我們簡化了流程，讓我們能更快速地部屬自己的 APP。
@@ -30,7 +26,7 @@ tags:
 
 這邊我會用我們之前寫的一個 Demo 來作範例
 
-<Github user="kwchang0831" repo="phoenix-dartSass-tailwind-daisyUI"/>
+[kwchang0831/phoenix-dartSass-tailwind-daisyUI](https://github.com/kwchang0831/demo-phoenix-dartSass-tailwind-daisyUI)
 
 我是在 Windows 上使用 VSCode Remote Ubuntu Server 進行開發的，所以以下的教學會以 Ubuntu 為主。
 
