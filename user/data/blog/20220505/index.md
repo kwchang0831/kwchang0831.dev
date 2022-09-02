@@ -104,7 +104,7 @@ Cloud Function 的部分我這邊就略過介紹，因為我並沒有碰得很�
 
 然後，最近我剛好逛到了 [SvelteThemes](https://www.sveltethemes.dev/) 這個網站，發現了 [Urara](https://www.sveltethemes.dev/article/urara) 這個模板 (Template)。
 
-<Github user="importantimport" repo="urara"/>
+[importantimport/urara](https://github.com/importantimport/urara)
 
 版面設計與功能都非常合我的胃口。二話不說，我馬上就下載來嘗試看看了。
 
