@@ -15,13 +15,15 @@ tags:
 
 架設 [Umami](https://github.com/umami-software/umami) ，我是使用 [Vercel](https://vercel.com/)，而數據庫則使用 [Postgresql](https://www.postgresql.org/) 並放在 [Railway](https://railway.app/) 上。 恩，沒錯，全部都是免費使用。
 
-不得不說 Railway 這平台真的簡單好用，設計得非常好。只可惜，不久前他們正式[取消了 Early Adopter Plan](https://railway.app/changelog/2022-7-15)。現在改成了 Stater Plan ，差別就是現在每個月只能給你 500 小時的免費使用與 免費的 $5 Credits。這樣就沒辦法整個月都能使用。這樣就變得不再適合架設 [Umami](https://github.com/umami-software/umami) 了。除非升級成 Developer Plan。升級需要填入信用卡，變成使用程度付費或是 Credit 制的訂閱。我在寫這篇文章的時候，才仔細算了下。升級之後 500 小時的限制就可以解除，而且其實還是可以免費架設 [Umami](https://github.com/umami-software/umami) 因為每個月平台發放免費的 $5 Credits，對於我過去的記憶體與 CPU 使用量來看應當是低於 $3 每個月。
+不得不說 Railway 這平台真的簡單好用，設計得非常好。只可惜，不久前他們正式[取消了 Early Adopter Plan](https://railway.app/changelog/2022-7-15)。現在改成了 Stater Plan ，差別就是現在每個月只給你 500 小時與 免費的 $5 Credits。一個月 31天至少需要 744小時，這樣就變得不再適合架設 [Umami](https://github.com/umami-software/umami) 了，除非升級成 Developer Plan。升級需要填入信用卡，變成依照使用程度來付費或是 Credit 制的訂閱。我在寫這篇文章的時候才仔細算了下。升級之後 500 小時的限制可以解除，對於我過去的記憶體與 CPU 使用量來看應當是低於 $3 每個月。所以，其實還是可以免費架設 [Umami](https://github.com/umami-software/umami)。
 
-不過，我一直都很想嘗試這個 [Plausible](https://plausible.io/)，尤其是它標榜超快速超輕量，比較不會被擋掉。我就跑去申請了 AWS 帳號拿免費12個月 EC2 的試用。喔，對了，不得不說使用 [Umami](https://github.com/umami-software/umami) 的時候，在 [Brave](https://brave.com/) 瀏覽器預設打開 Shields 的情況下與 Google Analytics 一樣都會看到瀏覽器跑出 `Failed to load resource: net::ERR_BLOCKED_BY_CLIENT` 的錯誤。我目前使用 [Plausible](https://plausible.io/) 並沒有遇到這問題
+不過，我一直都很想嘗試 [Plausible](https://plausible.io/)，尤其是它標榜超快速超輕量，不會被擋掉。我就跑去申請了 AWS 帳號拿免費12個月 EC2 的試用。喔，忘了說使用 [Umami](https://github.com/umami-software/umami) 的時候，在 [Brave](https://brave.com/) 瀏覽器預設打開 Shields 的情況下與 Google Analytics 一樣都會看到瀏覽器跑出 `Failed to load resource: net::ERR_BLOCKED_BY_CLIENT` 的錯誤。而，我目前使用 [Plausible](https://plausible.io/) 並沒有遇到這問題。
 
 ## 開頭
 
-言歸正傳，這篇文章主要是紀錄，如何在 AWS EC2 上架設 Plausible。 執行個體 (Instance) 會使用 Ubuntu 22.04 LTS 作為 OS。 即使你使用 [Digital Ocean](https://www.digitalocean.com/) 或其他的 VPS Hosting，本篇文章應當都有一定的參考性。
+言歸正傳，這篇文章主要是紀錄，如何在 AWS EC2 上架設 Plausible。
+
+以下流程，執行個體 (Instance) 會安裝 Ubuntu 22.04 LTS 作為 OS。即使你使用 [Digital Ocean](https://www.digitalocean.com/) 或其他的 VPS Hosting，本篇文章應當對你都有一定的幫助。
 
 ## 申請 AWS 帳號
 
