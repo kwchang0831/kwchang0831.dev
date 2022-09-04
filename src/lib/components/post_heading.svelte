@@ -1,10 +1,11 @@
 <script lang="ts">
   import type { Post } from '$lib/types/post';
   import { dateConfig, siteConfig } from '$config/site';
-  import ImgZ from '$lib/components/image_zoom.svelte';
+  import ImgZoom from '$lib/components/image_zoom.svelte';
   import tippy from '$lib/actions/tippy';
   import { lastUpdatedStr, defaultPublishedStr, defaultUpdatedStr } from '$lib/utli/timeFormat';
   import AuthorAvatar from '$lib/components/image_avatar.svelte';
+  import LL from '$i18n/i18n-svelte';
 
   export let data: Post.Post;
 </script>
@@ -29,12 +30,17 @@
       <time
         use:tippy
         class="dt-published"
-        aria-label="First published at {new Date(data.published).toLocaleString(dateConfig.toPublishedString.locales, {
-          year: 'numeric',
-          month: 'numeric',
-          day: 'numeric',
-          timeZone: 'Asia/Taipei',
-        })}"
+        aria-label="{$LL.FirstPublishedAt()} {new Date(data.published).toLocaleString(
+          dateConfig.toPublishedString.locales,
+          {
+            year: 'numeric',
+            month: 'numeric',
+            day: 'numeric',
+            hour: 'numeric',
+            minute: 'numeric',
+            timeZone: `${siteConfig.timeZone}`,
+          },
+        )}"
         datetime={data.published}
         itemprop="datePublished">
         {defaultPublishedStr(data.published)}
@@ -44,13 +50,16 @@
       </time>
       <span
         use:tippy
-        aria-label="Last updated at {new Date(data.updated).toLocaleString(dateConfig.toPublishedString.locales, {
+        aria-label="{$LL.LastUpdatedAt()} {new Date(data.updated).toLocaleString(dateConfig.toPublishedString.locales, {
           year: 'numeric',
           month: 'numeric',
           day: 'numeric',
-          timeZone: 'Asia/Taipei',
+          hour: 'numeric',
+          minute: 'numeric',
+          timeZone: `${siteConfig.timeZone}`,
         })}">
-        Updated: {lastUpdatedStr(data.updated)}
+        {$LL.Updated()}
+        {lastUpdatedStr(data.updated)}
       </span>
     </div>
   </div>
@@ -59,11 +68,14 @@
 
   <div class="mx--8 md:mx0">
     {#if data.cover}
-      <ImgZ src={data.cover} class="w-full h-auto aspect-auto object-cover md:(rounded-2xl shadow-xl)" loading="eager">
+      <ImgZoom
+        src={data.cover}
+        class="w-full h-auto aspect-auto object-cover md:(rounded-2xl shadow-xl)"
+        loading="eager">
         {#if data.coverCaption}
           {@html data.coverCaption}
         {/if}
-      </ImgZ>
+      </ImgZoom>
     {/if}
   </div>
 </div>

@@ -20,6 +20,7 @@ export const siteConfig: Site.Config = {
   subtitle: '成功最終會回來找他媽的',
   description: '👋 @kwchang0831 - Love to learn new stuff. Master of none. Having fun is all it matters. YOLO!',
   lang: 'zh',
+  timeZone: 'Asia/Taipei',
   since: 2021,
   author: {
     name: 'kwchang0831',
@@ -54,23 +55,23 @@ export const headConfig: Site.Head = {
 
 export const dateConfig: Site.DateConfig = {
   toPublishedString: {
-    locales: 'en-US',
+    locales: 'zh-TW',
     options: {
       year: 'numeric',
       weekday: 'short',
       month: 'short',
       day: 'numeric',
-      timeZone: 'Asia/Taipei',
+      timeZone: `${siteConfig.timeZone}`,
     },
   },
   toUpdatedString: {
-    locales: 'en-US',
+    locales: 'zh-TW',
     options: {
       year: 'numeric',
       weekday: 'short',
       month: 'short',
       day: 'numeric',
-      timeZone: 'Asia/Taipei',
+      timeZone: `${siteConfig.timeZone}`,
     },
   },
 };
