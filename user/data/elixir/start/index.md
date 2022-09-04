@@ -22,21 +22,21 @@ tags:
 
 當然，這不一定適合所有人。但，歡迎參考。
 
-<ImgZ src="/elixir/start/fig01.avif" width="1050" height="549">
+<ImgZoom src="/elixir/start/fig01.avif" width="1050" height="549">
 
 Figure 01. by [Aaron Davis](https://www.flickr.com/photos/aaron_davis/16453803047)
 
-</ImgZ>
+</ImgZoom>
 
 ## 為甚麼要學習 Elixir?
 
 因為好玩。學習就是快樂的泉源。難道你已經忘了小時候那最純粹的快樂了嗎?
 
-<ImgZ src="/elixir/start/fig02.avif" width="833" height="477">
+<ImgZoom src="/elixir/start/fig02.avif" width="833" height="477">
 
 Figure 02. by [Ben White](https://unsplash.com/@benwhitephotography?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/photos/4K2lIP0zc_k)
 
-</ImgZ>
+</ImgZoom>
 
 ## 簡略介紹 Elixir
 
@@ -52,7 +52,7 @@ Elixir 擴充性很高，最好的證明就是 Elixir 本身有 90% 以上都是
 
 去看看 "[Elixir 原始碼庫](https://github.com/elixir-lang/elixir)"。
 
-<ImgZ src="/elixir/start/fig03.avif" width="322" height="112"/>
+<ImgZoom src="/elixir/start/fig03.avif" width="322" height="112"/>
 
 ## Elixir 可以用來幹嘛?
 
@@ -396,11 +396,11 @@ iex(3)>
 
 我想說，還是自己動手學最棒了!
 
-<ImgZ src="/elixir/start/fig04.avif" width="1920" height="1280">
+<ImgZoom src="/elixir/start/fig04.avif" width="1920" height="1280">
 
 Figure 04. by [Zac Durant](https://unsplash.com/@zacdurant?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/photos/_6HzPU9Hyfg)
 
-</ImgZ>
+</ImgZoom>
 
 ||誰說一定要參加甚麼管它付費還是免費的課程才能學寫程式? 才能當軟體工程師呢? 我們的熱情不是靠來自他人意義不名的審核來下定論的。||
 
