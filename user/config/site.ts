@@ -25,6 +25,7 @@ export const siteConfig: Site.Config = {
   author: {
     name: 'kwchang0831',
     status: '❤️',
+    statusTip: 'Always Learning...',
     avatar: Avatar,
     avatar_128: Avatar_128,
     avatar_48_png: Avatar_48_PNG,
