@@ -16,7 +16,7 @@ tags:
 
 說實話，對於 Elxiir / Phoenix APP 的 Deployment 部署來說，說簡單其實也不簡單。好在現在市面上越來越多工具與平台幫我們簡化了流程，讓我們能更快速地部屬自己的 APP。
 
-根據[Phoenix 官方手冊](https://hexdocs.pm/phoenix/deployment.html)，讓我們能快速部署的最主要兩個一條龍平台就是 [Gigalixir](https://www.gigalixir.com/) 與 [Fly.io](https://fly.io/)，一條龍就是所有東西都包辦了，當然也包含了 Postgres 的部署。我們只需要幾個指令就可以讓我們的 APP 上線了。
+根據[Phoenix 官方手冊](https://hexdocs.pm/phoenix/deployment.html)，讓我們能快速部署的最主要兩個一條龍平台就是 [Gigalixir](https:/daisyUI/www.gigalixir.com/) 與 [Fly.io](https://fly.io/)，一條龍就是所有東西都包辦了，當然也包含了 Postgres 的部署。我們只需要幾個指令就可以讓我們的 APP 上線了。
 
 官方有提到 Heroku 但並不建議。因為 Heroku 會限制同時連線的數量與每個連線的持續時間，這對於 Elixir / Phoniex 的特性來說可是大大折扣。畢竟 Elixir 就是靠超多 light-weight process 來提升擴展性的。
 
@@ -30,7 +30,7 @@ tags:
 
 我是在 Windows 上使用 VSCode Remote Ubuntu Server 進行開發的，所以以下的教學會以 Ubuntu 為主。
 
-![fig01.avif](./fig01.avif)
+![fig01.webp](./fig01.webp)
 
 ## 安裝 Gigalixir CLI
 

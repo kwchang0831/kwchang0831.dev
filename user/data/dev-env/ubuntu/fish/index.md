@@ -32,13 +32,13 @@ tags:
 
 安裝完，你會得到一個簡單好上手的指令介面。
 
-![fig01.avif](./fig01.avif)
+![fig01.webp](./fig01.webp)
 
 ## 環境配置
 
 我的使用環境為 Windows 10 的 Windows Terminal + pwsh 連進 Ubuntu 22.04 LTS 使用。
 
-![fig02.avif](./fig02.avif)
+![fig02.webp](./fig02.webp)
 
 ## 安裝 必要套件
 

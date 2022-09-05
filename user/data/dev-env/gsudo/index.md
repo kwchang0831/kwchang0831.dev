@@ -4,7 +4,7 @@ description: 本篇文章主要紀錄如何安裝 gsudo 。 gsudo 是一個類�
 summary: gsudo 基本介紹與安裝
 published: 2021-09-07 GMT08:00
 updated: 2021-09-07 GMT08:00
-cover: ./cover.avif
+cover: ./cover.webp
 coverStyle: NONE
 tags:
   - 開發環境
@@ -57,7 +57,7 @@ winget install gsudo
 
 <kbd>Ctrl + ,</kbd> 打開設定，點擊 `新增設定檔` ，選擇複製 新版的 PowerShell，
 
-![fig01](./fig01.avif)
+![fig01](./fig01.webp)
 
 ### 修改命令列
 
@@ -67,7 +67,7 @@ winget install gsudo
 gsudo.exe "C:\\Program Files\\PowerShell\\7\\pwsh.exe"
 ```
 
-![fig02](./fig02.avif)
+![fig02](./fig02.webp)
 
 ### 儲存
 

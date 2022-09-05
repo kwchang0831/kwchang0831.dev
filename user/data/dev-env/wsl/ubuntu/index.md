@@ -4,7 +4,7 @@ description: 本篇文章紀錄如何在 Windows 10 安裝 Linux 子系統 (WSL)
 summary: WSL 與 Ubuntu 的安裝流程
 published: 2021-09-09 GMT08:00
 updated: 2021-09-09 GMT08:00
-cover: ./cover.avif
+cover: ./cover.webp
 coverStyle: NONE
 tags:
   - 開發環境
@@ -20,7 +20,7 @@ tags:
 ## 環境配置
 
 Windows 10 的版本最低至少要 2004
-![fig01](./fig01.avif)
+![fig01](./fig01.webp)
 
 ## (推薦) 安裝 Windows Terminal
 
@@ -36,13 +36,13 @@ wsl --install
 
 過程中會安裝 **虛擬機器平台**、**Windows 子系統 Linux 版**、與 **WSL Kernel**，而 OS 預設會下載 Ubuntu。
 
-![fig02](./fig02.avif)
+![fig02](./fig02.webp)
 
 安裝完成需要重開機。
 
 重開機後系統會自動啟動 **虛擬機器平台** 與 **Windows 子系統 Linux 版** 的功能，
 
-![fig03](./fig03.avif)
+![fig03](./fig03.webp)
 
 若 **虛擬機器平台** 與 **Windows 子系統 Linux 版** 功能沒有啟動，
 
@@ -66,7 +66,7 @@ dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux 
 
 硬體虛擬化的名稱可能 Intel Virtualization Technology、AMD-V、Hyper-V、VT-X、Vanderpool 或是 SVM。
 
-![fig04](./fig04.avif)
+![fig04](./fig04.webp)
 
 ## 更新 WSL 的 Kernal
 
@@ -81,7 +81,7 @@ wsl --update
 若無法更新的話，記得先打開 `Windows Update 設定` > `進階選項`，  
 打開第一個選項: `當您更新Windows時，收到其他Microsoft產品的更新`
 
-![fig05](./fig05.avif)
+![fig05](./fig05.webp)
 
 ### 方式 2. 手動下載更新檔
 
@@ -107,7 +107,7 @@ wsl --install -d Ubuntu
 
 安裝完成後，Ubuntu 會要求你新建用戶名稱與密碼。
 
-![fig06](./fig06.avif)
+![fig06](./fig06.webp)
 
 ## 確認安裝
 

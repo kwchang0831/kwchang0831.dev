@@ -4,7 +4,7 @@ description: 本篇文章紀錄如何在 Windows 10 安裝 Linux 子系統 (WSL)
 summary: WSL 與 Centos 的安裝流程
 published: 2021-09-11 GMT08:00
 updated: 2021-09-11 GMT08:00
-cover: ./cover.avif
+cover: ./cover.webp
 coverStyle: NONE
 tags:
   - 開發環境
@@ -34,7 +34,7 @@ wsl -l -o
 
 列表裡並沒有 Centos7 可以安裝，沒關係，我們去找可供 WSL 安裝的 Image 檔案。
 
-![fig01](./fig01.avif)
+![fig01](./fig01.webp)
 
 ## 下載 CentOS Image
 
@@ -42,7 +42,7 @@ wsl -l -o
 
 https://github.com/mishamosher/CentOS-WSL/releases/tag/7.9-2009
 
-![fig02](./fig02.avif)
+![fig02](./fig02.webp)
 
 如果需要別的版本，請參考 https://github.com/mishamosher/CentOS-WSL/releases
 
@@ -55,20 +55,20 @@ https://github.com/mishamosher/CentOS-WSL/releases/tag/7.9-2009
 
 下載好之後，請解壓縮到一個適合存放的資料夾裡。
 
-![fig03](./fig03.avif)
+![fig03](./fig03.webp)
 
 ## 安裝 Centos 7
 
 點擊兩下執行安裝。安裝會自動執行。最後會要你輸入任何按鍵以繼續，就完成安裝了。
 
-![fig04](./fig04.avif)
+![fig04](./fig04.webp)
 
 ## Windows Terminal
 
 如果之前已經有安裝 Windows Terminal。 Centos7 的選項會自動匯入。  
 如果沒有顯示 Centos 7 的選項，請關閉所有 Windows Terminal 重新開啟就會自動匯入了。
 
-![fig05](./fig05.avif)
+![fig05](./fig05.webp)
 
 ## 更新 Centos
 
@@ -84,7 +84,7 @@ yum -y update && yum -y upgrade
 ./Centos7.exe clean
 ```
 
-![fig06](./fig06.avif)
+![fig06](./fig06.webp)
 
 Windows Terminal 裡面的 Centos7 選項會自己刪除。  
 只要關閉再重新開啟 Windows Terminal 就可以了。

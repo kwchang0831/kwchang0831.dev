@@ -4,7 +4,7 @@ description: 我手工打造了一個超讚的靜態部落格生成器 🚀 QWER
 summary: 🎉 QWER 是我純手工打造的，效能好又易用，而且有我滿滿的愛 ❤
 published: 2022-08-30 00:30:00 GMT+08:00
 updated: 2022-08-30 00:30:00 GMT+08:00
-cover: ./cover.jpg
+cover: ./cover.webp
 coverCaption: Photo by <a href="https://unsplash.com/@aaronburden?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Aaron Burden</a> on <a href="https://unsplash.com/s/photos/notebook?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 tags:
   - [QWER, Svelte, SvelteKit]
@@ -73,9 +73,9 @@ QWER 的架構主要分成了兩部分
 
 ### QWER 實際演示
 
-![preview](./preview.png)
+![preview](./preview.webp)
 
-![mobile-preview](./mobile-preview.png)
+![mobile-preview](./mobile-preview.webp)
 
 ### 目前狀態
 

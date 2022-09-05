@@ -79,14 +79,14 @@ sudo choco install git -y
 
 <kbd>Ctrl + ,</kbd> 打開設定，選擇 PowerShell 7 的設定檔 `外觀 > 字型`，將字型改成 `MesloLGS NF` 之後儲存。
 
-![fig01](./fig01.avif)
+![fig01](./fig01.webp)
 
 #### PowerShell 7
 
 以系統管理員身分執行 PowerShell 7(x64)  
 更改字型為 `MesloLGS NF`
 
-![fig02](./fig02.avif)
+![fig02](./fig02.webp)
 
 ## 安裝 Oh My Posh
 

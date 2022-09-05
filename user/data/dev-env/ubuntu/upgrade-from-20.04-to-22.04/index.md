@@ -94,11 +94,11 @@ sudo do-release-upgrade -d --allow-third-party
 
 詢問是否開始升級，輸入 y 確認升級。
 
-![fig01.avif](./fig01.avif)
+![fig01.webp](./fig01.webp)
 
 選擇 [Yes] 不用再先詢問，全部都可以直接重啟服務，繼續。
 
-![fig02.avif](./fig02.avif)
+![fig02.webp](./fig02.webp)
 
 接下來，升級會需要一段時間...
 
@@ -106,7 +106,7 @@ sudo do-release-upgrade -d --allow-third-party
 
 最後會詢問是否重開機，選擇 'y' 重開機。
 
-![fig03.avif](./fig03.avif)
+![fig03.webp](./fig03.webp)
 
 ## 檢查升級
 

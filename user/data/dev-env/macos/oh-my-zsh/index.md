@@ -4,7 +4,7 @@ description: 本篇文章紀錄如何美化 macOS iTerm2 ，讓平常工作起�
 summary: iTerm2, Oh My Zsh, Powerlevel 10k 與 一些好用插件的安裝流程
 published: 2021-10-12 GMT08:00
 updated: 2021-10-12 GMT08:00
-cover: ./cover.avif
+cover: ./cover.webp
 coverStyle: NONE
 tags:
   - 開發環境
@@ -90,7 +90,7 @@ brew install --cask iterm2
 
 如果內建的不夠使用的話，這邊有很多顏色主題可供下載使用: https://github.com/mbadolato/iTerm2-Color-Schemes
 
-![fig01](./fig01.avif)
+![fig01](./fig01.webp)
 
 ## 查看已安裝的 Shell
 
@@ -243,6 +243,6 @@ wget https://github.com/romkatv/dotfiles-public/raw/master/.local/share/fonts/Ne
 
 更改字型的方式為 iTerm → Preferences → Profiles → Text → Font 。把 Font 改成 **MesloLGS NF**。
 
-![fig02](./fig02.avif)
+![fig02](./fig02.webp)
 
 ## 完結

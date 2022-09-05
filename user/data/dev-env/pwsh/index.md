@@ -4,7 +4,7 @@ description: 本篇文章主要紀錄最新版本 PowerShell 的安裝流程。 
 summary: PowerShell 7 基本安裝
 published: 2021-09-06 GMT08:00
 updated: 2021-09-06 GMT08:00
-cover: ./cover.avif
+cover: ./cover.webp
 coverStyle: NONE
 tags:
   - 開發環境
@@ -39,14 +39,14 @@ https://aka.ms/powershell-release?tag=stable
 之後按造安裝精靈的指示完成安裝，  
 除了添加下面兩個增加右鍵選單的選項，其餘都是 `Next` 下一步就可以了。
 
-![fig01](./fig01.avif)
+![fig01](./fig01.webp)
 
 ### 完成安裝
 
 安裝完 PowerShell 後，  
 重新打開 Windows Terminal 就可以看到 PowerShell 已經被自動加入清單。
 
-![fig02](./fig02.avif)
+![fig02](./fig02.webp)
 
 ## 安裝 2. 使用 chocolatey 安裝
 

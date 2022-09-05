@@ -4,7 +4,7 @@ description: 在 Vercel deploy Urara 時，build 階段一直卡在 exit code 13
 summary: 在 Vercel 上 build 一直報錯 exit code 137，所以改用 Netlify 來解決問題
 published: 2022-05-12 GMT08:00
 updated: 2022-05-12 GMT08:00
-cover: ./cover.avif
+cover: ./cover.webp
 coverStyle: NONE
 tags:
   - Blog

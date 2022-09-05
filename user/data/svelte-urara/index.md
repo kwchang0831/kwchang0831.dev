@@ -195,7 +195,7 @@ pnpm dev
 
 打開瀏覽器輸入 `http://localhost:3000/` 就可以看到了。
 
-![fig01](./fig01.avif)
+![fig01](./fig01.webp)
 
 若是你是用 remote 的方式，請修改 `package.json` 的 `dev:kit` 指令，最後添加 `--host` 參數，讓內網的其他電腦可以透過 `http://{IP}:3000/` 的方式看到網頁。
 
@@ -368,16 +368,16 @@ git push -u origin main
 ## Vercel 建置
 
 1. 登入 [Vercel](https://vercel.com/dashboard) 後，點選新增專案 `+ New Project`。
-2. 選擇 `Import Git Repository` 從 Git Repo 匯入專案。![fig02](/svelte-urara/fig02.avif)
-3. 點選 `Deploy`。 ![fig03](/svelte-urara/fig03.avif)
-4. 建構完成之後，點選回到 Dashboard 就可以看到建置的網址。![fig04](/svelte-urara/fig04.avif)
+2. 選擇 `Import Git Repository` 從 Git Repo 匯入專案。![fig02](/svelte-urara/fig02.webp)
+3. 點選 `Deploy`。 ![fig03](/svelte-urara/fig03.webp)
+4. 建構完成之後，點選回到 Dashboard 就可以看到建置的網址。![fig04](/svelte-urara/fig04.webp)
 
 ## Netlify 建置
 
-1. 登入 Netlify 後，選擇 `Import from Git` 從 Git Repo 匯入專案。 ![fig05](/svelte-urara/fig05.avif)
+1. 登入 Netlify 後，選擇 `Import from Git` 從 Git Repo 匯入專案。 ![fig05](/svelte-urara/fig05.webp)
 2. 選擇從 Github 匯入。
-3. 不用更改任何設定，點選 `Deploy site`。 ![fig06](/svelte-urara/fig06.avif)
-4. 點選 `Open published deploy` 可以看到成果。 ![fig07](/svelte-urara/fig07.avif)
+3. 不用更改任何設定，點選 `Deploy site`。 ![fig06](/svelte-urara/fig06.webp)
+4. 點選 `Open published deploy` 可以看到成果。 ![fig07](/svelte-urara/fig07.webp)
 
 ## 測試網站
 

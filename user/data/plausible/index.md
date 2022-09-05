@@ -32,19 +32,19 @@ AWS 免費方案申請 [https://aws.amazon.com/tw/free/](https://aws.amazon.com/
 ## 建立 EC2 執行個體
 
 進入 [EC2 服務頁面](https://us-west-1.console.aws.amazon.com/ec2/home?region=us-west-1#Home:)，區域我選擇的是 **us-west-1** 美國西部 (加州北部)。
-![fig01](./fig01.jpg)
+![fig01](./fig01.webp)
 
 點選**啟動執行個體**來創建新的執行個體，這時你需要設定名稱/標籤與作業系統等等的設定。
-![fig02](./fig02.jpg)
+![fig02](./fig02.webp)
 
 執行個體的類型我這邊選擇的是**t2.micro**，記得是要選**符合免費方案資格**的。然後點選**建立新的金鑰對**。
-![fig03](./fig03.jpg)
+![fig03](./fig03.webp)
 
 你之後會需要這個金鑰才能 SSH 進入這個執行個體，下載你的金鑰 **.PEM** 至一個安全的地方，我通常會丟到 `~/.ssh` 資料夾底下。
-![fig04](./fig04.jpg)
+![fig04](./fig04.webp)
 
 接下來網路設定的部分，勾選**允許來自網際網路的 HTTPs 流量**。至於允許 SSH 流量，來自，依照自己的喜好與情況選擇 隨處 0.0.0.0/0 或是 只有你的 IP 才可以 SSH 登入。
-![fig05](./fig05.jpg)
+![fig05](./fig05.webp)
 
 :::info
 這邊只勾選**允許來自網際網路的 HTTPs 流量**，而沒有勾選 **允許來自網際網路的 HTTP 流量**，是因為未來我們都只會透過 Https 的方式登入 Plausible。後續會提到如何使用 Certbot 自動生成免費的 SSL 憑證，所以暫時不用擔心這問題。
@@ -56,7 +56,7 @@ AWS 免費方案申請 [https://aws.amazon.com/tw/free/](https://aws.amazon.com/
 
 創建好你的執行個體之後，回到EC2的首頁確認右上角的區域還是**加州北部 (us-west-1)**，點選你的執行個體之後點選**連線**。
 
-![fig06](./fig06.jpg)
+![fig06](./fig06.webp)
 
 我是選擇用 SSH 的方式進行連線，範例:
 
@@ -460,7 +460,7 @@ docker-compose exec plausible_db psql -U postgres -d plausible_db -c "UPDATE use
 - 進入 Plausible ，進入想要修改的網站的設定。
 - 點擊 Seach Console，然後點擊 **Continue with Google**。
 
-    ![fig07](./fig07.jpg)
+    ![fig07](./fig07.webp)
 
 - 點選 Select Property ，選擇你於 Google Search Console 已經認證過的網址進行連結。
 

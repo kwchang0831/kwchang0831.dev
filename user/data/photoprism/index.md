@@ -4,7 +4,7 @@ description: 本篇文章紀錄如何從頭到尾架設 PhotoPrism - 類似 Goog
 summary: 安裝架設開源照片管理伺服器，類似 Google 相簿，包含 AI 圖片自動分類等功能
 published: 2021-12-07 GMT08:00
 updated: 2021-12-07 GMT08:00
-cover: ./cover.avif
+cover: ./cover.webp
 coverStyle: NONE
 tags:
   - Ubuntu
@@ -28,15 +28,15 @@ tags:
 
 我們可以先從設定把操作介面的語言改成繁體中文。
 
-![fig01](./fig01.avif)
+![fig01](./fig01.webp)
 
 我們可以搜尋 `dog` (狗) 試試看。 目前標籤與關鍵字搜尋只支援英文。
 
-![fig02](./fig02.avif)
+![fig02](./fig02.webp)
 
 或是到 [https://demo.photoprism.app/labels](https://demo.photoprism.app/labels)，這邊我們可以看到所有已經辨識出來的標籤。
 
-![fig03](./fig03.avif)
+![fig03](./fig03.webp)
 
 剩下的功能就讓各位自己去嘗試了，我們接下來介紹安裝流程。
 
@@ -72,7 +72,7 @@ tags:
 
 桌上型電腦、智慧型手機、與 VM 都可以透過內網存取 [TrueNAS](https://www.truenas.com/) 伺服器主機上的 Samba 內網用共享資料夾，新增與刪除檔案。PhotoPrism 的主機只會讀取 Samba 內網用共享資料夾裡的檔案，並不會變更或修改檔案。PhotoPrism 主要是在讀取照片與影片檔案之後，去進行分析整理後生成根據這些資料的資料。
 
-![fig04](./fig04.avif)
+![fig04](./fig04.webp)
 
 ## (選用) 新增 Linux VM 在 TrueNAS
 
@@ -84,12 +84,12 @@ tags:
 
 以下為參考流程：
 
-![fig05](./fig05.avif)
-![fig06](./fig06.avif)
-![fig07](./fig07.avif)
-![fig08](./fig08.avif)
-![fig09](./fig09.avif)
-![fig10](./fig10.avif)
+![fig05](./fig05.webp)
+![fig06](./fig06.webp)
+![fig07](./fig07.webp)
+![fig08](./fig08.webp)
+![fig09](./fig09.webp)
+![fig10](./fig10.webp)
 
 之後點擊新增好的 VM，然後點擊 VNC 連線進去操作安裝過程。
 
@@ -99,75 +99,75 @@ tags:
 
 進入 Ubuntu 安裝畫面。
 
-![fig11](./fig11.avif)
+![fig11](./fig11.webp)
 
 都是選 English (US) 就可以了。
 
-![fig12](./fig12.avif)
+![fig12](./fig12.webp)
 
 網路設定，預設是使用 DHCP 自動取得 IP。
 
-![fig13](./fig13.avif)
+![fig13](./fig13.webp)
 
 我們這邊會示範自訂 IP。 上下選到網路介面然後選擇 Edit IPv4。
 
-![fig14](./fig14.avif)
+![fig14](./fig14.webp)
 
 IPv4 Method 改成 Manual 手動，然後這邊 Subnet 的寫法不是用 Subnet Mask (255.255.255.0)方式來寫。根據稍早的示範環境架構圖，我們的無線路由器在 192.168.0.1，整個網段為 192.168.0.0/24。
 
-![fig15](./fig15.avif)
+![fig15](./fig15.webp)
 
 Proxy 與 Mirror 的部分都不用更動。
 
-![fig16](./fig16.avif)
+![fig16](./fig16.webp)
 
-![fig17](./fig17.avif)
+![fig17](./fig17.webp)
 
 設置存儲空間。
 
-![fig18](./fig18.avif)
+![fig18](./fig18.webp)
 
 存儲空間這邊建議直接按下 Reset 之後，再自行修改。
 
-![fig19](./fig19.avif)
+![fig19](./fig19.webp)
 
-![fig20](./fig20.avif)
+![fig20](./fig20.webp)
 
 選擇物理硬碟後，新增 GPT Partition。
 
 我們只需要新增 Mount: / 的空間即可，安裝精靈會幫我們增加開機要用的 Partition ( /bott/efi )。我是直接輸入超過 max size 的容量，安裝精靈會幫我們修正成可容許的最大空間。
 
-![fig21](./fig21.avif)
+![fig21](./fig21.webp)
 
-![fig22](./fig22.avif)
+![fig22](./fig22.webp)
 
 按下 Done 就完成設置存儲空間。
 
-![fig23](./fig23.avif)
+![fig23](./fig23.webp)
 
 再次確認，選擇繼續 Continue。
 
-![fig24](./fig24.avif)
+![fig24](./fig24.webp)
 
 建立使用者檔案。
 
-![fig25](./fig25.avif)
+![fig25](./fig25.webp)
 
 這邊要選擇安裝 OpenSSH Server，這樣我們之後才可以從遠端電腦用 SSH 連線進來。
 
-![fig26](./fig26.avif)
+![fig26](./fig26.webp)
 
 這邊 Snaps 建議都不用安裝，直接繼續就好。有需要的套件，我們之後會一起安裝。
 
-![fig27](./fig27.avif)
+![fig27](./fig27.webp)
 
 開始安裝中。
 
-![fig28](./fig28.avif)
+![fig28](./fig28.webp)
 
 安裝完成。
 
-![fig29](./fig29.avif)
+![fig29](./fig29.webp)
 
 關機，退出安裝用 USB 或 CD，重開機。
 
@@ -175,11 +175,11 @@ Proxy 與 Mirror 的部分都不用更動。
 
 顯示安裝完成後回到 TrueNAS 網頁介面把這 VM 關機 (POWER OFF)。
 
-![fig30](./fig30.avif)
+![fig30](./fig30.webp)
 
 點選 DEVICES 把 CDROM (安裝光碟) 的部分刪除。這樣我們才能正常開機而不是再次進入安裝程序。
 
-![fig31](./fig31.avif)
+![fig31](./fig31.webp)
 
 把 VM 開機。
 
@@ -187,11 +187,11 @@ Proxy 與 Mirror 的部分都不用更動。
 
 開機後，輸入我們安裝時設置的使用者帳號與密碼登入即可。
 
-![fig32](./fig32.avif)
+![fig32](./fig32.webp)
 
 這樣就完成了。我們之後就可以準備開始安裝 PhotoPrism。
 
-![fig33](./fig33.avif)
+![fig33](./fig33.webp)
 
 ### (選用) SSH remote 進入 Ubuntu Server
 
@@ -203,9 +203,9 @@ Proxy 與 Mirror 的部分都不用更動。
 ssh kwchang0831@192.168.0.3
 ```
 
-![fig34](./fig34.avif)
+![fig34](./fig34.webp)
 
-![fig35](./fig35.avif)
+![fig35](./fig35.webp)
 
 ### (選用) 架設 Samba 分享資料夾
 
@@ -640,15 +640,15 @@ sudo docker-compose exec photoprism photoprism convert
 
 或是到 [https://myaccount.google.com/dashboard](https://myaccount.google.com/dashboard[) 點選`下載您的資料` 。
 
-![fig36](./fig36.avif)
+![fig36](./fig36.webp)
 
 只選擇 Google 相簿後，點選下一步
 
-![fig37](./fig37.avif)
+![fig37](./fig37.webp)
 
 然後依造自己喜好的設定，建立匯出作業。
 
-![fig38](./fig38.avif)
+![fig38](./fig38.webp)
 
 等匯出作業完成之後，把所有分割的壓縮檔案都下載並解壓縮到 PhotoPrism 的資料夾中，之後重新跑掃描檔案就可以了。
 

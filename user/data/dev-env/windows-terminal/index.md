@@ -4,7 +4,7 @@ description: 本篇文章記錄如何安裝 Windows Terminal。 用了 Windows T
 summary: Windows Terminal 基本安裝與設置
 published: 2021-09-05 GMT08:00
 updated: 2021-09-05 GMT08:00
-cover: ./cover.avif
+cover: ./cover.webp
 coverStyle: NONE
 tags:
   - 開發環境
@@ -43,7 +43,7 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManage
 ## 更改顯示語言
 
 若是需要更改顯示語言，<kbd>Ctrl +，</kbd> 打開設定， 選擇 `外觀 > 語言` 來進行修改。
-![fig01](./fig01.avif)
+![fig01](./fig01.webp)
 
 更改後若沒有生效，請結束 Windows Terminal 後重新開啟。
 
@@ -55,16 +55,16 @@ https://windowsterminalthemes.dev/
 找到喜歡的主題之後，點選 Get theme ，設定檔就會被複製到剪貼簿上。
 
 回到 Windows Terminal ， <kbd>Ctrl +，</kbd> 打開設定，點選 `開啟 JSON 檔案` 。
-![fig02](./fig02.avif)
+![fig02](./fig02.webp)
 
 找到 `"schemes":` 區塊, <kbd>Ctrl + V</kbd> 貼上剛剛的設定檔到 schemes 底下。
 
 記得要加上一個逗號，每個設定檔之間都要有 `，` 區隔。
 
-![fig03](./fig03.avif)
+![fig03](./fig03.webp)
 
 之後就可以在 `設定 > 色彩配置` 裡看到你剛剛新增的主題了。
 
-![fig04](./fig04.avif)
+![fig04](./fig04.webp)
 
 ## 完結
