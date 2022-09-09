@@ -18,7 +18,8 @@ export const siteConfig: Site.Config = {
   url: 'https://www.kwchang0831.dev',
   title: '成功他媽．阿瑋',
   subtitle: '成功最終會回來找他媽的',
-  description: '👋 @kwchang0831 - Love to learn new stuff. Master of none. Having fun is all it matters. YOLO!',
+  description:
+    '成功最終會回來找他媽的 👋 | @kwchang0831 - Love to learn new stuff. Master of none. Having fun is all it matters. YOLO!',
   lang: 'zh',
   timeZone: 'Asia/Taipei',
   since: 2021,
