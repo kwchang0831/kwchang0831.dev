@@ -9,6 +9,7 @@
   import { page } from '$app/stores';
   import { onMount } from 'svelte';
   import { fly } from 'svelte/transition';
+  import { query, searching } from '$lib/search/stores';
 
   onMount(() => {
     tagsCur.init();
@@ -24,7 +25,7 @@
       }
     });
 
-    postsShow.filter($tagsCur);
+    query.set($page.url.searchParams.get('query') ?? '');
   });
 
   let iW: number;
@@ -33,7 +34,7 @@
 <svelte:window bind:innerWidth={iW} />
 
 <svelte:head>
-  <title>{siteConfig.title} | @{siteConfig.author.name}</title>
+  <title>{siteConfig.title}</title>
   <meta name="description" content={siteConfig.description} />
   <link rel="canonical" href={siteConfig.url} />
 
