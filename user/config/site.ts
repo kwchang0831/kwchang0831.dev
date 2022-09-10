@@ -12,7 +12,7 @@ import Avatar_96_PNG from '$assets/avatar.png?w=96&h=96';
 import Avatar_192_PNG from '$assets/avatar.png?w=192&h=192';
 import Avatar_512_PNG from '$assets/avatar.png?w=512&h=512';
 
-import SiteCover from '$assets/qwer.webp';
+import SiteCover from '$assets/sitecover.png';
 
 export const siteConfig: Site.Config = {
   url: 'https://www.kwchang0831.dev',
