@@ -4,8 +4,8 @@ description: 紀錄新網站上架與舊網站的搬遷過程。 大略介紹 JA
 summary: 簡略介紹 JAMStack 和 NextJS 與 Svelte 的靜態網站生成器 和 新網站上架
 cover: ./cover.webp
 coverStyle: NONE
-published: 2022-05-05 GMT08:00
-updated: 2022-05-05 GMT08:00
+published: '2022-05-05T00:00:00.000+08:00'
+updated: '2022-05-05T00:00:00.000+08:00'
 tags:
   - Blog
   - Urara

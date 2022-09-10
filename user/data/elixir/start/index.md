@@ -2,8 +2,8 @@
 title: '02. Elixir 學習 - 跨出第一步'
 description: 讓我們一起學 Elixir 系列。 02. Elixir 學習 - 跨出第一步。 簡短介紹 Elixir 與 免費的學習資源。之後就開始動手來撰寫第一個 Elixir 程式。
 summary: 簡短介紹 Elixir 與 開始動手來撰寫第一個 Elixir 程式
-published: 2022-05-18 GMT08:00
-updated: 2022-05-18 GMT08:00
+published: '2022-05-18T00:00:00.000+08:00'
+updated: '2022-05-18T00:00:00.000+08:00'
 cover: ./cover.webp
 coverText: 'Cover Photo by <a href="https://unsplash.com/@aamir_in?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" rel="nofollow noopener noreferrer external" target="_blank">Aamir Suhail</a> on <a href="https://unsplash.com/photos/ATlRqTCbvV4" rel="nofollow noopener noreferrer external" target="_blank">Unsplash</a>'
 series_tag: 'Learn-Elixir'

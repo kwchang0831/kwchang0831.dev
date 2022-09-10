@@ -2,8 +2,8 @@
 title: 01. Elixir 安裝筆記 (Windows, Ubuntu, macOS)
 description: 讓我們一起學 Elixir 系列。 01. 安裝筆記。 建議使用 Linux 來安裝。本篇文章主要紀錄在 Windows 與 Ubuntu 上安裝 Elixir 的流程，包含使用 asdf 版本管理器來安裝。
 summary: Elixir 安裝流程，包含使用 asdf 版本管理器來安裝 Elixir
-published: 2022-05-11 GMT08:00
-updated: 2022-05-11 GMT08:00
+published: '2022-05-11T00:00:00.000+08:00'
+updated: '2022-05-11T00:00:00.000+08:00'
 cover: ./cover.webp
 series_tag: 'Learn-Elixir'
 series_title: ⚡ 讓我們一起學 Elixir 🧪

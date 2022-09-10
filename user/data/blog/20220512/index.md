@@ -2,8 +2,8 @@
 title: 從 Vercel 改成 Netlify 來架設 Urara
 description: 在 Vercel deploy Urara 時，build 階段一直卡在 exit code 137 報錯，嘗試修改 max_old_space_size 擴充內存，但無效。 最後改用 Netlify 本地 build 直接 deploy 解決問題。
 summary: 在 Vercel 上 build 一直報錯 exit code 137，所以改用 Netlify 來解決問題
-published: 2022-05-12 GMT08:00
-updated: 2022-05-12 GMT08:00
+published: '2022-05-12T00:00:00.000+08:00'
+updated: '2022-05-12T00:00:00.000+08:00'
 cover: ./cover.webp
 coverStyle: NONE
 tags:

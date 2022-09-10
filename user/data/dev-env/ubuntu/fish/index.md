@@ -2,8 +2,8 @@
 title: Ubuntu 安裝 Fish Shell + Oh My Fish + Tide 與各種插件
 description: 本篇文章紀錄安裝 Fish Shell 與各種好用插件讓開發環境更高效的流程。 包含安裝 Fish Shell, Oh My Fish, Fisher, Tide, Z, Sponge, autopair.fish, fzf.fish, fzf, fd, Bat, asdf 自動完成。
 summary: 簡單好上手的 Shell，自帶自動完成功能，bash 或 zsh 用膩了可以來試試看
-published: 2022-05-20 GMT08:00
-updated: 2022-05-20 GMT08:00
+published: '2022-05-20T00:00:00.000+08:00'
+updated: '2022-05-20T00:00:00.000+08:00'
 cover: ./cover.webp
 coverStyle: NONE
 tags:

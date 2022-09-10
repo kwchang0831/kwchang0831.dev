@@ -2,8 +2,8 @@
 title: Ubuntu 安裝 Zsh + Oh My Zsh + Powerlevel10k 與各種插件
 description: 本篇文章紀錄如何美化 Ubuntu Terminal ，並安裝一些插件讓開發環境更高效。 包含安裝 Zsh, Oh My Zsh, Powerlevel10k 主題, zsh-autosuggestions, zsh-syntax-highlighting, Zsh-z。
 summary: Zsh, Oh My Zsh, Powerlevel10k 與 一些好用插件的安裝流程
-published: 2021-09-09 GMT08:00
-updated: 2021-09-09 GMT08:00
+published: '2021-09-09T00:00:00.000+08:00'
+updated: '2021-09-09T00:00:00.000+08:00'
 cover: ./cover.webp
 coverStyle: NONE
 tags:

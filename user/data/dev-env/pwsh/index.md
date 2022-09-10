@@ -2,8 +2,8 @@
 title: PowerShell 7 - 來安裝最新版的 pwsh
 description: 本篇文章主要紀錄最新版本 PowerShell 的安裝流程。 環境配置為 Windows 10 搭配 Windows Terminal 。  PowerShell 是一個跨平台 (Windows, Linux, 與 macOS) 的 自動化工具 / 框架 與 Shell。
 summary: PowerShell 7 基本安裝
-published: 2021-09-06 GMT08:00
-updated: 2021-09-06 GMT08:00
+published: '2021-09-06T00:00:00.000+08:00'
+updated: '2021-09-06T00:00:00.000+08:00'
 cover: ./cover.webp
 coverStyle: NONE
 tags:

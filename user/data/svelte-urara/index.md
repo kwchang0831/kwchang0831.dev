@@ -2,8 +2,8 @@
 title: Urara - 用 Svelte 打造的靜態網站生成器 ; 來架個超快的網誌
 description: 自架速度超快的網誌，簡潔美觀且功能十足。 包含完整 SEO 優化, 自動生成 Sitemap 與 Atom Feeds。 免費架設於 Vercel 或 Netlify 上。 The Best and Fastest Svelte Blog Template - Urara。
 summary: 手把手教學使用 Urara 架設網誌於免費平台 Vercel 與 Netlify 上
-published: 2022-05-03 GMT08:00
-updated: 2022-05-03 GMT08:00
+published: '2022-05-03T00:00:00.000+08:00'
+updated: '2022-05-03T00:00:00.000+08:00'
 cover: ./cover.webp
 coverStyle: NONE
 tags:

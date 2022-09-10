@@ -2,8 +2,8 @@
 title: PhotoPrism - 自己架設 Google 相簿
 description: 本篇文章紀錄如何從頭到尾架設 PhotoPrism - 類似 Google 相簿 的開源照片管理伺服器。 主要的功能包含AI圖片自動分類功能；可偵測顏色、物體、人臉等等資訊，讓使用者可以更快速找到照片。 支援顯示照片與影片也支援顯示相機 Exif 的資訊。 也包含了用世界地圖的方式來整理照片。
 summary: 安裝架設開源照片管理伺服器，類似 Google 相簿，包含 AI 圖片自動分類等功能
-published: 2021-12-07 GMT08:00
-updated: 2021-12-07 GMT08:00
+published: '2021-12-07T00:00:00.000+08:00'
+updated: '2021-12-07T00:00:00.000+08:00'
 cover: ./cover.webp
 coverStyle: NONE
 tags:

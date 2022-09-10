@@ -2,8 +2,8 @@
 title: Windows 10 上安裝 WSL + Ubuntu
 description: 本篇文章紀錄如何在 Windows 10 安裝 Linux 子系統 (WSL) 與 Ubuntu
 summary: WSL 與 Ubuntu 的安裝流程
-published: 2021-09-09 GMT08:00
-updated: 2021-09-09 GMT08:00
+published: '2021-09-09T00:00:00.000+08:00'
+updated: '2021-09-09T00:00:00.000+08:00'
 cover: ./cover.webp
 coverStyle: NONE
 tags:

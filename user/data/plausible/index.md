@@ -2,8 +2,8 @@
 title: '架設 Plausible 來替代 Google Analytics 於免費的 AWS EC2 上'
 description: 免費的 AWS 帳號創建 EC2 來架設 Plausible - 隱私優先，簡單輕量快速，不會被擋的網站訪問統計，用來取代 Google Analytics, Umami ...等，使用 Ubuntu 22.04 LTS 作為 EC2 執行個體的作業系統。
 summary: 本來是用 Umami + Railway 來作網站訪問統計，但...
-published: 2022-09-03 09:45:00 GMT+08:00
-updated: 2022-09-03 09:45:00 GMT+08:00
+published: '2022-09-03T00:00:00.000+08:00'
+updated: '2022-09-03T00:00:00.000+08:00'
 cover: ./cover.webp
 tags:
   - [Plausible, AWS, EC2]

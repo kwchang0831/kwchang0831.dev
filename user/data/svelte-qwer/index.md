@@ -2,8 +2,8 @@
 title: '我用 SvelteKit 打造了全新的部落格生成器: QWER'
 description: 我手工打造了一個超讚的靜態部落格生成器 🚀 QWER ，效能好又易用。製作過程中使用了近年來很夯的 Svelte 與我滿滿的愛 ❤。
 summary: 🎉 QWER 是我純手工打造的，效能好又易用，而且有我滿滿的愛 ❤
-published: 2022-08-30 00:30:00 GMT+08:00
-updated: 2022-08-30 00:30:00 GMT+08:00
+published: '2022-08-30T00:00:00.000+08:00'
+updated: '2022-08-30T00:00:00.000+08:00'
 cover: ./cover.webp
 coverCaption: Photo by <a href="https://unsplash.com/@aaronburden?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Aaron Burden</a> on <a href="https://unsplash.com/s/photos/notebook?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 tags:

@@ -2,8 +2,8 @@
 title: 'Phoenix 1.6+ 搭配 DartSass + Tailwind + DaisyUI (ESbuild)'
 description: 本篇文章示範如何在新建立的 Phoenix 1.6+ (ESbuild) 的 Project 裡整合 DartSass + TailWind + DaisyUI。透過 DartSass 整合所有 CSS/SCSS 輸出後，再讓 Tailwind 做最後處理輸出。
 summary: 透過 DartSass 整合所有 CSS/SCSS 輸出後，再讓 Tailwind 做最後處理輸出
-published: 2022-05-26 GMT08:00
-updated: 2022-05-26 GMT08:00
+published: '2022-05-26T00:00:00.000+08:00'
+updated: '2022-05-26T00:00:00.000+08:00'
 cover: ./cover.webp
 coverStyle: NONE
 tags:

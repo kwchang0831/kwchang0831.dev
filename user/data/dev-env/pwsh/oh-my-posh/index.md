@@ -2,8 +2,8 @@
 title: 安裝新版 Oh My Posh 與插件來美化 PowerShell
 description: 本篇文章紀錄 使用 Oh My Posh 來美化 PowerShell 7（pwsh）並安裝一些插件讓開發環境更高效。 插件可以安裝 Posh Git 讓使用 Git 指令的時候有自動完成的功能，或是安裝 ZLocation 讓我們可以更快速地跳到想去的資料夾，等等...
 summary: Oh My Posh 基本安裝與主題置換，並介紹一些好用的插件
-published: 2022-05-22 GMT08:00
-updated: 2022-05-22 GMT08:00
+published: '2022-05-22T00:00:00.000+08:00'
+updated: '2022-05-22T00:00:00.000+08:00'
 cover: ./cover.webp
 coverStyle: NONE
 tags:
