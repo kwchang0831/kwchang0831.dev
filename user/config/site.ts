@@ -12,7 +12,7 @@ import Avatar_96_PNG from '$assets/avatar.png?w=96&h=96';
 import Avatar_192_PNG from '$assets/avatar.png?w=192&h=192';
 import Avatar_512_PNG from '$assets/avatar.png?w=512&h=512';
 
-import DefaultOGCard_512_512 from '$assets/default_og_card.jpg?w=512&h=512&format=webp';
+import SiteCover from '$assets/qwer.webp';
 
 export const siteConfig: Site.Config = {
   url: 'https://www.kwchang0831.dev',
@@ -23,6 +23,7 @@ export const siteConfig: Site.Config = {
   lang: 'zh',
   timeZone: 'Asia/Taipei',
   since: 2021,
+  cover: SiteCover,
   author: {
     name: 'kwchang0831',
     status: '❤️',
@@ -38,7 +39,6 @@ export const siteConfig: Site.Config = {
     email: 'contact@kwchang0831.dev',
     bio: `Do it. Just do it!<br/>Don't let your dreams be dreams!<br/>`,
   },
-  og_card: DefaultOGCard_512_512,
 };
 
 export const headConfig: Site.Head = {

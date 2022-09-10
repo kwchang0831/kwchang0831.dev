@@ -2,7 +2,7 @@
   import IndexProfile from '$lib/components/index_profile.svelte';
   import IndexPosts from '$lib/components/index_posts.svelte';
   import Tags from '$lib/components/tags_root.svelte';
-  import { tagsCur } from '$stores/tags';
+  import { tagsCur, tagsShowMobile } from '$stores/tags';
   import { postsShow } from '$stores/posts';
   import { siteConfig } from '$config/site';
 
@@ -41,46 +41,72 @@
   <!-- OpenGraph -->
   <meta property="og:site_name" content={siteConfig.title} />
   <meta property="og:locale" content={siteConfig.lang} />
+  <meta property="og:type" content="website" />
 
   <meta property="og:title" content={siteConfig.title} />
+  <meta name="twitter:title" content={siteConfig.title} />
+
   <meta property="og:description" content={siteConfig.description} />
+  <meta name="twitter:description" content={siteConfig.description} />
 
-  <meta property="og:type" content="website" />
   <meta property="og:url" content={siteConfig.url} />
+  <meta property="twitter:url" content={siteConfig.url} />
 
-  {#if siteConfig.author.avatar}
-    <meta property="og:image" content={siteConfig.author.avatar} />
-    <meta name="twitter:card" content="summary_large_image" />
-  {:else}
-    <meta property="og:image" content={new URL(siteConfig.og_card, $page.url.origin).href} />
-    <meta name="twitter:card" content="summary" />
-  {/if}
+  <meta property="og:image" content={new URL(siteConfig.cover, siteConfig.url).href} />
+  <meta name="twitter:image" content={new URL(siteConfig.cover, siteConfig.url).href} />
+  <meta name="twitter:card" content="summary_large_image" />
 </svelte:head>
 
-<div
-  itemscope
-  itemtype="https://schema.org/Blog"
-  itemprop="blog"
-  class="flex flex-nowrap justify-center flex-col items-center xl:(flex-row items-stretch)">
+{#if iW < 1280}
+  {#if $tagsShowMobile}
+    <div
+      in:fly={{ x: -100, y: -100, duration: 300, delay: 300 }}
+      out:fly={{ x: -100, y: -100, duration: 300 }}
+      class="mx6 my4">
+      <Tags class="flex flex-col min-w-[12rem]" />
+    </div>
+  {:else}
+    <div
+      in:fly={{ y: 100, duration: 300, delay: 300 }}
+      out:fly={{ y: 100, duration: 300 }}
+      itemscope
+      itemtype="https://schema.org/Blog"
+      itemprop="blog"
+      class="flex flex-nowrap justify-center flex-col items-center xl:(flex-row items-stretch)">
+      <div class="max-w-screen-md flex-1 relative ml6">
+        <IndexProfile class="flex flex-col gap2 items-center text-center" />
+      </div>
+      <div class="h-feed min-h-50vh flex-none w-full">
+        <IndexPosts />
+      </div>
+    </div>
+  {/if}
+{:else}
   <div
-    in:fly={{ x: iW < 1280 ? 0 : -100, y: iW < 1280 ? 0 : -100, duration: 300, delay: 300 }}
-    out:fly={{ x: iW < 1280 ? 0 : -100, y: iW < 1280 ? 0 : 100, duration: 300 }}
-    class="max-w-screen-md flex-1 relative ml6">
-    <IndexProfile
-      class="flex flex-col gap2 items-center text-center xl:(items-end text-right py4 sticky top-[4rem] min-w-[10rem])" />
-  </div>
+    itemscope
+    itemtype="https://schema.org/Blog"
+    itemprop="blog"
+    class="flex flex-nowrap justify-center flex-col items-center xl:(flex-row items-stretch)">
+    <div
+      in:fly={{ x: -100, y: -100, duration: 300, delay: 300 }}
+      out:fly={{ x: -100, y: 100, duration: 300 }}
+      class="max-w-screen-md flex-1 relative ml6">
+      <IndexProfile
+        class="flex flex-col gap2 items-center text-center xl:(items-end text-right py4 sticky top-[4rem] min-w-[10rem])" />
+    </div>
 
-  <div
-    in:fly={{ y: 100, duration: 300, delay: 300 }}
-    out:fly={{ y: -100, duration: 300 }}
-    class="h-feed min-h-50vh flex-none w-full md:(rounded-2xl w-[55rem])">
-    <IndexPosts />
-  </div>
+    <div
+      in:fly={{ y: 100, duration: 300, delay: 300 }}
+      out:fly={{ y: -100, duration: 300 }}
+      class="h-feed min-h-50vh flex-none w-full md:(rounded-2xl w-[55rem])">
+      <IndexPosts />
+    </div>
 
-  <div
-    in:fly={{ x: 100, y: -100, duration: 300, delay: 300 }}
-    out:fly={{ x: 100, y: 100, duration: 300 }}
-    class="max-w-screen-md flex-1 relative mr6">
-    <Tags class="hidden max-w-[20rem] xl:(flex flex-col min-w-[12rem] sticky top-[4rem])" />
+    <div
+      in:fly={{ x: 100, y: -100, duration: 300, delay: 300 }}
+      out:fly={{ x: 100, y: 100, duration: 300 }}
+      class="max-w-screen-md flex-1 relative mr6">
+      <Tags class="hidden max-w-[20rem] xl:(flex flex-col min-w-[12rem] sticky top-[4rem])" />
+    </div>
   </div>
-</div>
+{/if}
