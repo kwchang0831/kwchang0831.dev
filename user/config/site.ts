@@ -51,7 +51,8 @@ export const headConfig: Site.Head = {
       : [
           // For Production Enviroment
           '<link rel="preconnect" href="https://plausible.kwchang0831.dev" />',
-          '<script defer data-domain="kwchang0831.dev" src="https://plausible.kwchang0831.dev/js/plausible.js"></script>',
+          '<script defer type="text/partytown" data-domain="kwchang0831.dev" src="https://plausible.kwchang0831.dev/js/plausible.js"></script>',
+          // '<script defer data-domain="kwchang0831.dev" src="https://plausible.kwchang0831.dev/js/plausible.js"></script>',
         ],
 };
 
