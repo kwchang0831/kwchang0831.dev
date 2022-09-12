@@ -100,6 +100,14 @@ html {
     transform-origin: left;
     transform: scaleX(1);
   }
+
+  .katex-inline {
+    --at-apply: 'inline-block mx1 text-lg overflow-hidden scrollbar scrollbar-track-color-gray-800 scrollbar-thumb-color-teal-700 scrollbar-rounded scrollbar-h-0.25rem';
+  }
+
+  .katex-block {
+    --at-apply: 'py1 text-xl overflow-hidden scrollbar scrollbar-track-color-gray-800 scrollbar-thumb-color-teal-700 scrollbar-rounded scrollbar-h-0.25rem';
+  }
 }
 
 body {

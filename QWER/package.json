@@ -1,7 +1,7 @@
 {
   "name": "@kwchang0831/qwer",
   "author": "kwchang0831",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Convert markdwon and asset files for svelte-qwer internel use",
   "license": "MIT",
   "homepage": "https://github.com/kwchang0831/svelte-qwer",
@@ -24,6 +24,7 @@
     "fs-extra": "^10.1.0",
     "gray-matter": "^4.0.3",
     "html-to-text": "^8.2.1",
+    "katex": "^0.16.2",
     "limax": "^3.0.0",
     "lz-string": "^1.4.4",
     "marked": "^4.1.0",
