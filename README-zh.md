@@ -74,7 +74,7 @@ npx degit kwchang0831/svelte-QWER my-blog
    vercel --prod
    ```
 
-## 📚了解更多
+## 📚 了解更多
 
 請參考 [教學文件](https://docs-svelte-qwer.vercel.app/)。
 
