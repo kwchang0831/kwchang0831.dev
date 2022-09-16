@@ -8,8 +8,8 @@ export const UserConfig = {
   YearTagName: '年份',
 
   BannerImage: {
-    width: 900,
-    height: 200,
+    width: 768,
+    height: 320,
     format: ['avif'],
   },
 
