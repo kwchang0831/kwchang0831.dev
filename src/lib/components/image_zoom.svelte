@@ -6,8 +6,6 @@
   // @ts-ignore
   import { assets } from '$generated/assets';
   import { UserConfig } from '$config/QWER.config';
-  import { dev } from '$app/environment';
-  import { siteConfig } from '$config/site';
   import { fade } from 'svelte/transition';
   import { onMount } from 'svelte';
   import mediumZoom from 'medium-zoom';
@@ -23,8 +21,8 @@
   export let alt: string = src;
   export let loading: 'eager' | 'lazy' = 'lazy';
   export let decoding: 'async' | 'sync' | 'auto' = 'async';
-  export let width: string | undefined = undefined;
-  export let height: string | undefined = undefined;
+  export let width: string | number | undefined = undefined;
+  export let height: string | number | undefined = undefined;
 
   let asset: Asset.Image | undefined = $assets.get(src);
   const resolutions: Array<[string, any]> = Object.entries(UserConfig.ExtraResolutions)
@@ -51,16 +49,13 @@
         {#each resolutions as [res, meta]}
           {#each meta.format as format, index}
             <!--
-              DirtyFix: ASSET PATH INCORRECT TRANSFORMED
-              The image asset path is expected to transfrom to "/_app/immutable/assets/..."
-              But, instead transform to "./_app/immutable/assets/..."
-              So, we add "/" in front to force it. Not sure if there's other side effects for now.
+              /@imagetools/... get transformed to ./_app/immutable/assets/...
+              while causes problem to page that is 2+ level of depth
+              DirtyFix: blindly remove leading dot
             -->
             <source
               media={`(min-width: ${meta.minWidth})`}
-              srcset={dev
-                ? `${Array.isArray(asset[res]) ? asset[res][index] : asset[res]}`
-                : new URL(Array.isArray(asset[res]) ? asset[res][index] : asset[res], siteConfig.url).href}
+              srcset={`${Array.isArray(asset[res]) ? asset[res][index] : asset[res]}`.replace(/^\./, '')}
               width={meta.width}
               type={`image/${format}`} />
           {/each}
@@ -68,14 +63,16 @@
       {/if}
       {#if UserConfig.ExtraFormats && UserConfig.ExtraFormats.length}
         {#each UserConfig.ExtraFormats as format, index}
+          <!--
+            /@imagetools/... get transformed to ./_app/immutable/assets/...
+            while causes problem to page that is 2+ level of depth
+            DirtyFix: blindly remove leading dot
+          -->
           <source
             type={`image/${format}`}
-            srcset={dev
-              ? `${Array.isArray(asset['extraFormats']) ? asset['extraFormats'][index] : asset['extraFormats']}`
-              : new URL(
-                  Array.isArray(asset['extraFormats']) ? asset['extraFormats'][index] : asset['extraFormats'],
-                  siteConfig.url,
-                ).href} />
+            srcset={`${
+              Array.isArray(asset['extraFormats']) ? asset['extraFormats'][index] : asset['extraFormats']
+            }`.replace(/^\./, '')} />
         {/each}
       {/if}
       <img
