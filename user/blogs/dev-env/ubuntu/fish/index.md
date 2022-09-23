@@ -1,24 +1,23 @@
 ---
-title: Ubuntu 安裝 Fish Shell + Oh My Fish + Tide 與各種插件
-description: 本篇文章紀錄安裝 Fish Shell 與各種好用插件讓開發環境更高效的流程。 包含安裝 Fish Shell, Oh My Fish, Fisher, Tide, Z, Sponge, autopair.fish, fzf.fish, fzf, fd, Bat, asdf 自動完成。
+title: Ubuntu 安裝 Fish Shell + Tide 主題 與各種插件
+description: 本篇文章紀錄安裝 Fish Shell 與各種好用插件讓開發環境更高效的流程。 包含安裝 Fish Shell, Fisher, Tide, Z, Sponge, autopair.fish, fzf.fish, fzf, fd, Bat, asdf 自動完成。
 summary: 簡單好上手的 Shell，自帶自動完成功能，bash 或 zsh 用膩了可以來試試看
 published: '2022-05-20T00:00:00.000+08:00'
-updated: '2022-05-20T00:00:00.000+08:00'
+updated: '2022-09-23T00:00:00.000+08:00'
 cover: ./cover.webp
+coverCaption: <a href="https://www.slant.co/topics/513/~best-unix-shells" rel="external noreferrer noopener">Slant</a> 2022 年票選第一推薦的 Unix Shell 是 Fish Shell。 如果你剛好 Zsh 也用膩了，不如一起來嘗試看看 Fish Shell。
 coverStyle: NONE
 tags:
   - 開發環境
   - Ubuntu
+  - Fish
 ---
-
-[Slant](https://www.slant.co/topics/513/~best-unix-shells) 2022 年票選第一推薦的 Unix Shell 是 Fish Shell。 如果你剛好 Zsh 也用膩了，不如一起來嘗試看看 Fish Shell。
 
 ## 開頭
 
 本篇文章會安裝以下：
 
 - [Fish Shell](https://fishshell.com/)
-- [Oh My Fish](https://github.com/oh-my-fish/oh-my-fish)
 - [Fisher](https://github.com/jorgebucaran/fisher)
 - [Tide](https://github.com/IlanCosman/tide)
 - [Z](https://github.com/jethrokuan/z)
@@ -106,6 +105,7 @@ shell 輸入
 chsh -s $(which fish)
 ```
 
+<!--
 ## 安裝 Oh My Fish
 
 Oh My Fish 是用來擴充 Fish Shell 的
@@ -114,7 +114,7 @@ shell 輸入
 
 ```shell
 curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install | fish
-```
+``` -->
 
 ## 安裝 Fisher
 
@@ -277,7 +277,7 @@ fisher install PatrickF1/fzf.fish
 
 ## 設定 asdf 自動完成
 
-若已經有安裝使用 asdf 軟體版本管理器，設定自動完成如下
+若已經有安裝使用 [asdf](https://asdf-vm.com/) 軟體版本管理器，設定自動完成如下
 
 shell 輸入
 
