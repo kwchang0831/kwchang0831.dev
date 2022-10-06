@@ -1,19 +1,13 @@
 <p align="right"><a href="README.md">English</a> | <strong>中文</strong></p>
 
-<h1 align="center">👋 kwchang0831.dev</h1>
+<h1 align="center">👋 <a href="https://www.kwchang0831.dev/">kwchang0831.dev</a></h1>
 
 <p align="center">
 這是我私人的部落格。 使用 <a href="https://github.com/kwchang0831/svelte-QWER/">QWER</a> 生成。
 </p>
 
 <p align="center">
-<img src="https://img.shields.io/github/languages/top/kwchang0831/kwchang0831.dev?color=%23ff3e00&style=for-the-badge&logo=svelte" alt="Language" />
-<a href="https://github.com/kwchang0831/kwchang0831.dev/blob/main/LICENSE"><img alt="GitHub" src="https://img.shields.io/github/license/kwchang0831/kwchang0831.dev?style=for-the-badge" alt="License"></a>
-<a href="https://github.com/kwchang0831/kwchang0831.dev/discussions/categories/q-a"><img src="https://img.shields.io/badge/❓ Discussion-Q&A-informational?style=for-the-badge" alt="Q&A"></a>
-</p>
-
-<p align="center">
-<a href="https://raw.githubusercontent.com/gist/kwchang0831/79a9f8a867a78757c9d3c8f61421e77b/raw/metrics.pagespeed.svg"><img style="float:middle" width="auto" alt="PAGESPEED" src="https://raw.githubusercontent.com/gist/kwchang0831/79a9f8a867a78757c9d3c8f61421e77b/raw/metrics.pagespeed.svg"></a>
+<a href="https://pagespeed.web.dev/report?url=https%3A%2F%2Fwww.kwchang0831.dev%2F&form_factor=desktop"><img style="float:middle" width="auto" alt="PAGESPEED" src="https://raw.githubusercontent.com/gist/kwchang0831/79a9f8a867a78757c9d3c8f61421e77b/raw/metrics.pagespeed.svg"></a>
 </p>
 
 ## 🎉 馬上嘗試看看 [QWER](https://github.com/kwchang0831/svelte-QWER/)
@@ -46,32 +40,6 @@ npx degit kwchang0831/svelte-QWER my-blog
 
    ```bash
    pnpm dev
-   ```
-
-1. 清除自動生成的檔案。(記得不要提交這些檔案至 Git Repo 上)
-
-   ```bash
-   pnpm clean
-   ```
-
-## 🚀 部署至 Vercel
-
-1. 安裝 Vercel CLI。
-
-   ```bash
-   npm i -g vercel
-   ```
-
-1. 登入 Vercel 帳號 與 設定。
-
-   ```bash
-   vercel
-   ```
-
-1. 部署。
-
-   ```bash
-   vercel --prod
    ```
 
 ## 📚 了解更多
