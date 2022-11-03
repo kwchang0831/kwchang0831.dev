@@ -3,7 +3,7 @@ title: 安裝新版 Oh My Posh 與插件來美化 PowerShell
 description: 本篇文章紀錄 使用 Oh My Posh 來美化 PowerShell 7（pwsh）並安裝一些插件讓開發環境更高效。 插件可以安裝 Posh Git 讓使用 Git 指令的時候有自動完成的功能，或是安裝 ZLocation 讓我們可以更快速地跳到想去的資料夾，等等...
 summary: Oh My Posh 基本安裝與主題置換，並介紹一些好用的插件
 published: '2022-05-22T00:00:00.000+08:00'
-updated: '2022-05-22T00:00:00.000+08:00'
+updated: '2022-11-03T00:00:00.000+08:00'
 cover: ./cover.webp
 coverStyle: NONE
 tags:
@@ -52,26 +52,60 @@ tags:
 
 若還沒有安裝 Git ，可以使用 [chocolatey](https://chocolatey.org/install) 來安裝。
 
-以系統管理員權限打開 PowerShell 輸入，
-
-```shell
-choco install git -y
-```
-
-或是使用 gsudo 取得一次性系統管理員權限來安裝
+使用 gsudo 取得一次性系統管理員權限來安裝
 
 ```shell
 sudo choco install git -y
 ```
 
+## 安裝 Oh My Posh
+
+pwsh 輸入
+
+```shell
+winget install JanDeDobbeleer.OhMyPosh -s winget
+```
+
+用文字編輯器編輯 `$Profile`
+
+```shell
+notepad $Profile
+```
+
+:::tip
+
+若是找不到 `$Profile，執行以下指令來新增。
+
+```sh
+New-Item -Path $PROFILE -Type File -Force
+```
+
+:::
+
+添加以下，儲存後關閉。
+
+```shell
+/// title: $Profile
+oh-my-posh init pwsh | Invoke-Expression
+```
+
+重新開啟 Windows Terminal 後生效，或是輸入以下指令應用修改，
+
+```shell
+. $Profile
+```
+
 ## 安裝 Patched 字型
 
-為了 Oh My Posh 的主題可以正常顯示字型與圖示，下載以下四個字型並安裝:
+為了 Oh My Posh 的主題可以正常顯示字型與圖示，下載以下字型包並安裝:
 
-- [MesloLGS NF Regular.ttf](https://github.com/romkatv/dotfiles-public/raw/master/.local/share/fonts/NerdFonts/MesloLGS%20NF%20Regular.ttf)
-- [MesloLGS NF Bold.ttf](https://github.com/romkatv/dotfiles-public/raw/master/.local/share/fonts/NerdFonts/MesloLGS%20NF%20Bold.ttf)
-- [MesloLGS NF Italic.ttf](https://github.com/romkatv/dotfiles-public/raw/master/.local/share/fonts/NerdFonts/MesloLGS%20NF%20Italic.ttf)
-- [MesloLGS NF Bold Italic.ttf](https://github.com/romkatv/dotfiles-public/raw/master/.local/share/fonts/NerdFonts/MesloLGS%20NF%20Bold%20Italic.ttf)
+[https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/Meslo.zip](https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/Meslo.zip)
+
+或是使用 `oh-my-posh` 來安裝。這邊必須使用 gsudo 取得一次性系統管理員權限來安裝。
+
+```sh
+sudo oh-my-posh font install
+```
 
 ### 更改字型
 
@@ -83,38 +117,9 @@ sudo choco install git -y
 
 #### PowerShell 7
 
-以系統管理員身分執行 PowerShell 7(x64)  
-更改字型為 `MesloLGS NF`
+以系統管理員身分執行 PowerShell 7(x64)，更改字型為 `MesloLGS NF`
 
 ![fig02](./fig02.webp)
-
-## 安裝 Oh My Posh
-
-pwsh 輸入
-
-```shell
-winget install oh-my-posh
-```
-
-用文字編輯器編輯 `$Profile`
-
-```shell
-notepad $Profile
-```
-
-添加以下，儲存後關閉。
-
-```shell
-/// title: $Profile
-oh-my-posh init pwsh | Invoke-Expression
-```
-
-重新開啟 Windows Terminal 後生效，  
-或是輸入以下指令應用修改，
-
-```shell
-. $Profile
-```
 
 ### 更改 Oh My Posh 主題
 
@@ -137,36 +142,20 @@ Get-PoshThemes
 oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH\powerlevel10k_modern.omp.json" | Invoke-Expression
 ```
 
-重新開啟 Windows Terminal 後生效，  
-或是輸入以下指令應用修改，
+重新開啟 Windows Terminal 後生效，或是輸入以下指令應用修改，
 
 ```shell
 . $Profile
 ```
 
-## 安裝 Scoop
+## 安裝插件 [posh-git](https://github.com/dahlbyk/posh-git)
 
-[Scoop](https://scoop.sh/) 就像 Mac 的 [Homebrew](https://brew.sh/) 一樣讓可以我們更快速地用指令行安裝軟體。
+[posh-git](https://github.com/dahlbyk/posh-git) 讓 Git 的指令可已用 <kbd>Tab</kbd> 自動完成。
 
-pwsh 輸入
-
-```shell
-Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
-Invoke-WebRequest get.scoop.sh | Invoke-Expression
-```
-
-## 安裝插件 posh-git
-
-posh-git 讓 Git 的指令可已用 <kbd>Tab</kbd> 自動完成。
-
-安裝 posh-git
-
-pwsh 輸入
+pwsh 輸入來安裝
 
 ```shell
-scoop bucket add extras
-scoop install posh-git
-Add-PoshGitToProfile
+sudo choco install poshgit
 ```
 
 在 `$Profile` 檔案最後一行新增以下指令：

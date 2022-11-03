@@ -34,7 +34,7 @@
     {#if siteConfig.author.github}
       <a
         href={siteConfig.author.github}
-        rel="noopener external"
+        rel="noopener external noreferrer"
         target="_blank"
         class="group flex-1 relative overflow-hidden btn btn-block normal-case border-none no-underline bg-[#5865f2] hover:bg-[#7983f5]">
         <svg
