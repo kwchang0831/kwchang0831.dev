@@ -57,3 +57,9 @@
     <div id="giscus" class="giscus" />
   </div>
 {/if}
+
+<style lang="scss">
+  :global(.giscus-frame) {
+    width: 100%;
+  }
+</style>

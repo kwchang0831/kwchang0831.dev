@@ -20,7 +20,7 @@
   import { fade, fly } from 'svelte/transition';
   import LL from '$i18n/i18n-svelte';
 
-  const thisPost = $postsAll.get($page.route.id?.substring(1) ?? '') as Post.Post;
+  const thisPost = $postsAll.get($page.route?.id?.substring(1) ?? '') as Post.Post;
   const prevPost = thisPost?.prev ? $postsAll.get(thisPost.prev) : undefined;
   const nextPost = thisPost?.next ? $postsAll.get(thisPost.next) : undefined;
   let observer: IntersectionObserver;
@@ -137,7 +137,6 @@
               <a
                 rel="next"
                 href="/{nextPost.slug}"
-                alt="/{nextPost.slug}"
                 class="absolute text-2xl font-bold z-10 !decoration-none !underline-none title-link-orange-500-orange-500 top-[3rem] left-[1rem] mr8">
                 {nextPost.title}
               </a>
@@ -153,7 +152,6 @@
               <a
                 rel="prev"
                 href="/{prevPost.slug}"
-                alt="/{prevPost.slug}"
                 class="absolute text-2xl font-bold z-10 !decoration-none !underline-none title-link-orange-500-orange-500 top-[3rem] right-[1rem] ml8">
                 {prevPost.title}
               </a>
