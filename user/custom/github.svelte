@@ -20,7 +20,7 @@
   });
 </script>
 
-<div class="rounded-2xl bg-gray/[0.25]  dark:bg-black/[0.25] my4">
+<div class="rounded-2xl bg-gray/[0.25] dark:bg-black/[0.25] my4">
   <div class="p6">
     {#key info}
       {#if info}
