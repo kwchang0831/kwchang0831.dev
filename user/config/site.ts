@@ -33,7 +33,7 @@ export const siteConfig: Site.Config = {
     avatar_512_png: Avatar_512_PNG,
     website: 'https://www.kwchang0831.dev/',
     github: 'https://github.com/kwchang0831',
-    email: 'contact@kwchang0831.dev',
+    email: 'kwchang0831@gmail.com',
     bio: `Do it. Just do it!<br/>Don't let your dreams be dreams!<br/>`,
   },
 };
