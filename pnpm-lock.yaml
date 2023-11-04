@@ -213,8 +213,8 @@ importers:
         specifier: ^9.0.5
         version: 9.0.5
       katex:
-        specifier: ^0.16.8
-        version: 0.16.8
+        specifier: ^0.16.9
+        version: 0.16.9
       limax:
         specifier: ^4.1.0
         version: 4.1.0
@@ -222,14 +222,14 @@ importers:
         specifier: ^1.5.0
         version: 1.5.0
       marked:
-        specifier: ^5.1.2
-        version: 5.1.2
+        specifier: ^9.1.5
+        version: 9.1.5
       marked-gfm-heading-id:
-        specifier: ^3.0.4
-        version: 3.0.4(marked@5.1.2)
+        specifier: ^3.1.0
+        version: 3.1.0(marked@9.1.5)
       marked-mangle:
-        specifier: ^1.1.0
-        version: 1.1.0(marked@5.1.2)
+        specifier: ^1.1.4
+        version: 1.1.4(marked@9.1.5)
       prism-svelte:
         specifier: ^0.5.0
         version: 0.5.0
@@ -4380,13 +4380,6 @@ packages:
       graceful-fs: 4.2.11
     dev: true
 
-  /katex@0.16.8:
-    resolution: {integrity: sha512-ftuDnJbcbOckGY11OO+zg3OofESlbR5DRl2cmN8HeWeeFIV7wTXvAOx8kEjZjobhA+9wh2fbKeO6cdcA9Mnovg==}
-    hasBin: true
-    dependencies:
-      commander: 8.3.0
-    dev: true
-
   /katex@0.16.9:
     resolution: {integrity: sha512-fsSYjWS0EEOwvy81j3vRA8TEAhQhKiqO+FQaKWp0m39qwOzHVBgAUBIXWj1pB+O2W3fIpNa6Y9KSKCVbfPhyAQ==}
     hasBin: true
@@ -4638,25 +4631,25 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
-  /marked-gfm-heading-id@3.0.4(marked@5.1.2):
-    resolution: {integrity: sha512-k22f+k8B449kRVXbi3OYxahI6t8HywKIF0wn0L0atzYhFHYRcJynLDekh+lcxcZkNnkEGRZOHuRfTcpjMjLqDw==}
+  /marked-gfm-heading-id@3.1.0(marked@9.1.5):
+    resolution: {integrity: sha512-PYgLXDbL64Ga6kCpvVuKVoIVsV6MKUtkOXnR8mIqyjiycAeKNhQxcGpO0mHEogOTzyY8A8TcK49k5VwYMUCCbg==}
     peerDependencies:
-      marked: ^4 || ^5
+      marked: '>=4 <10'
     dependencies:
       github-slugger: 2.0.0
-      marked: 5.1.2
+      marked: 9.1.5
     dev: true
 
-  /marked-mangle@1.1.0(marked@5.1.2):
-    resolution: {integrity: sha512-ed2W2gMB2HIBaYasBZveMFJfDRTL2OFycr0GgUSPcBSNl5dX+1r6lHG6u1eFXw7kej2hBTWa1m6YZqcfn4Coxw==}
+  /marked-mangle@1.1.4(marked@9.1.5):
+    resolution: {integrity: sha512-O9Fc08hX/9EYjXevrVKphjPQE4GumC5TqW7ret+/It6NS+LJVItRz1WlF3WVyj9siwSO8bfCxEpf5sxdT3TsLw==}
     peerDependencies:
-      marked: ^4 || ^5
+      marked: '>=4 <10'
     dependencies:
-      marked: 5.1.2
+      marked: 9.1.5
     dev: true
 
-  /marked@5.1.2:
-    resolution: {integrity: sha512-ahRPGXJpjMjwSOlBoTMZAK7ATXkli5qCPxZ21TG44rx1KEo44bii4ekgTDQPNRQ4Kh7JMb9Ub1PVk1NxRSsorg==}
+  /marked@9.1.5:
+    resolution: {integrity: sha512-14QG3shv8Kg/xc0Yh6TNkMj90wXH9mmldi5941I2OevfJ/FQAFLEwtwU2/FfgSAOMlWHrEukWSGQf8MiVYNG2A==}
     engines: {node: '>= 16'}
     hasBin: true
     dev: true
