@@ -207,7 +207,6 @@
     <div
       role="button"
       tabindex="0"
-      aria-label="tag category scroll up"
       on:click={handleUpMore}
       on:touchend={handleUpMore}
       on:keydown={(e) => {
@@ -236,7 +235,6 @@
     <div
       role="button"
       tabindex="0"
-      aria-label="tag category scroll down"
       on:click={handleDownMore}
       on:touchend={handleDownMore}
       on:keydown={(e) => {

@@ -47,8 +47,8 @@ export const headConfig: Site.Head = {
         ]
       : [
           // For Production Env
-          '<link rel="preconnect" href="https://plausible.kwchang0831.dev" />',
-          '<script defer data-domain="kwchang0831.dev" src="https://plausible.kwchang0831.dev/js/plausible.js"></script>',
+          // '<link rel="preconnect" href="https://plausible.kwchang0831.dev" />',
+          // '<script defer data-domain="kwchang0831.dev" src="https://plausible.kwchang0831.dev/js/plausible.js"></script>',
           // Google tag (gtag.js)
           `<script src="https://www.googletagmanager.com/gtag/js?id=G-MYT9DK0Z21"></script>`,
           `<script>
