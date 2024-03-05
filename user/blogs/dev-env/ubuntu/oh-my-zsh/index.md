@@ -39,6 +39,8 @@ sudo apt install wget git curl vim -y
 
 我們必須先安裝 Patched 過的字型，之後才能正確地顯示字型與圖示。
 
+### 第一種方式
+
 下載並安裝以下四個字型：
 
 - [MesloLGS NF Regular.ttf](https://github.com/romkatv/dotfiles-public/raw/master/.local/share/fonts/NerdFonts/MesloLGS%20NF%20Regular.ttf)
@@ -53,13 +55,9 @@ wget https://github.com/romkatv/dotfiles-public/raw/master/.local/share/fonts/Ne
 wget https://github.com/romkatv/dotfiles-public/raw/master/.local/share/fonts/NerdFonts/MesloLGS%20NF%20Bold%20Italic.ttf
 ```
 
-- Windows
+### 第二種方式
 
-下載完成後在檔案點擊右鍵並選擇 **安裝** 或 **為所有使用者安裝**。
-
-- Ubuntu
-
-點擊兩下字型檔案，點擊 Install 。
+Github [@ryanoasis/nerd-fonts](https://github.com/ryanoasis/nerd-fonts?tab=readme-ov-file#tldr)
 
 ## 更改字體
 

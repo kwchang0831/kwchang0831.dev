@@ -3,9 +3,9 @@ title: Ubuntu 安裝 Fish Shell + Tide 主題 與各種插件
 description: 本篇文章紀錄安裝 Fish Shell 與各種好用插件讓開發環境更高效的流程。 包含安裝 Fish Shell, Fisher, Tide, Z, Sponge, autopair.fish, fzf.fish, fzf, fd, Bat, asdf 自動完成。
 summary: 簡單好上手的 Shell，自帶自動完成功能，bash 或 zsh 用膩了可以來試試看
 published: '2022-05-20T00:00:00.000+08:00'
-updated: '2022-09-23T00:00:00.000+08:00'
+updated: '2024-03-05T00:00:00.000+08:00'
 cover: ./cover.webp
-coverCaption: <a href="https://www.slant.co/topics/513/~best-unix-shells" rel="external noreferrer noopener">Slant</a> 2022 年票選第一推薦的 Unix Shell 是 Fish Shell。 如果你剛好 Zsh 也用膩了，不如一起來嘗試看看 Fish Shell。
+coverCaption: <a href="https://www.slant.co/topics/513/~best-unix-shells" rel="external noreferrer noopener">Slant</a> 2022年票選第一推薦的 Unix Shell 是 Fish Shell，一起來嘗試看看。
 coverStyle: NONE
 tags:
   - 開發環境
@@ -49,7 +49,9 @@ sudo apt install wget git curl vim -y
 
 ## 安裝 Patched 字型
 
-我們必須先安裝 Patched 過的字型，之後才能正確地顯示字型與圖示。
+我們必須先安裝 Patched 過的字型，之後才能正確地顯示字型與圖示，這邊建議使用 **MesloLGS NF** 字體。
+
+### 第一種方式
 
 下載並安裝以下四個字型：
 
@@ -67,27 +69,13 @@ wget https://github.com/romkatv/dotfiles-public/raw/master/.local/share/fonts/Ne
 wget https://github.com/romkatv/dotfiles-public/raw/master/.local/share/fonts/NerdFonts/MesloLGS%20NF%20Bold%20Italic.ttf
 ```
 
-- Windows
+### 第二種方式
 
-下載完成後在檔案點擊右鍵並選擇 **安裝** 或 **為所有使用者安裝**。
-
-- Ubuntu
-
-點擊兩下字型檔案，點擊 Install 。
-
-## 更改字體
-
-- Windows
-
-到 Windows Terminal 的設定 > Ubuntu 設定檔 > 外觀， 更改字體為 **MesloLGS NF**。
-
-- Ubuntu
-
-使用內建的 Terminal，字型安裝完畢之後，就可以直接正常顯示不需用修改任何參數。
+Github [@ryanoasis/nerd-fonts](https://github.com/ryanoasis/nerd-fonts?tab=readme-ov-file#tldr)
 
 ## 安裝 Fish shell
 
-新增來源庫 > 更新 > 安裝 Fish shell
+新增來源庫 > 更新 > 安裝 [Fish shell](https://fishshell.com/)
 
 shell 輸入
 
@@ -105,30 +93,15 @@ shell 輸入
 chsh -s $(which fish)
 ```
 
-<!--
-## 安裝 Oh My Fish
-
-Oh My Fish 是用來擴充 Fish Shell 的
-
-shell 輸入
-
-```shell
-curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install | fish
-``` -->
-
 ## 安裝 Fisher
 
-Fisher 是插件管理員
-
-shell 輸入
+[Fisher](https://github.com/jorgebucaran/fisher) 是插件管理員。
 
 ```shell
 curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source && fisher install jorgebucaran/fisher
 ```
 
 ### 查看已安裝插件
-
-shell 輸入
 
 ```shell
 fisher list
@@ -139,11 +112,11 @@ fisher list
 ```shell
 ❯ fisher list
 jorgebucaran/fisher
-IlanCosman/tide@v5
+ilancosman/tide@v6
 jethrokuan/z
-jorgebucaran/autopair.fish
 andreiborisov/sponge
-PatrickF1/fzf.fish
+jorgebucaran/autopair.fish
+patrickf1/fzf.fish
 ```
 
 ## 安裝 Tide 主題
@@ -153,15 +126,15 @@ PatrickF1/fzf.fish
 <!-- https://github.com/IlanCosman/tide/raw/assets/animations/configuration_wizard.gif -->
 ![w1.webm](./w1.webm "Tide #Configuration Wizard")
 
-安裝，shell 輸入
+安裝 [Tide](https://github.com/IlanCosman/tide) ，輸入
 
 ```shell
-fisher install IlanCosman/tide@v5
+fisher install IlanCosman/tide@v6
 ```
 
 ### 設定 Tide 主題
 
-shell 輸入
+安裝完成後，輸入
 
 ```shell
 tide configure
@@ -169,9 +142,7 @@ tide configure
 
 ## 安裝插件 Z
 
-類似於 [autojump](https://github.com/wting/autojump) 的插件，比 `cd` 更快速地直接跳到想去的資料夾。
-
-shell 輸入
+插件 [Z](https://github.com/jethrokuan/z) 類似於 [autojump](https://github.com/wting/autojump) 的插件，比 `cd` 更快速地直接跳到想去的資料夾。
 
 ```shell
 fisher install jethrokuan/z
@@ -179,9 +150,7 @@ fisher install jethrokuan/z
 
 ## 安裝插件 Sponge
 
-讓指令歷史紀錄更乾淨，不會去紀錄失敗或是打錯的指令到歷史清單中。
-
-shell 輸入
+[Sponge](https://github.com/meaningful-ooo/sponge) 讓指令歷史紀錄更乾淨，不會去紀錄失敗或是打錯的指令到歷史清單中。
 
 ```shell
 fisher install andreiborisov/sponge
@@ -189,17 +158,13 @@ fisher install andreiborisov/sponge
 
 ### 清除指令歷史
 
-shell 輸入
-
 ```shell
 history clear
 ```
 
-## 安裝插件 autopair
+## 安裝插件 autopair.fish
 
-自動幫你補上 `()`， `[]`， `{}`， `""`， 還有 `''`
-
-shell 輸入
+[autopair.fish](https://github.com/jorgebucaran/autopair.fish) 自動幫你補上 `()`， `[]`， `{}`， `""`， 還有 `''`
 
 ```shell
 fisher install jorgebucaran/autopair.fish
@@ -207,7 +172,7 @@ fisher install jorgebucaran/autopair.fish
 
 ## 安裝插件 fzf.fish
 
-這插件讓你的 Fish 互動性更強大。
+[fzf.fish](https://github.com/PatrickF1/fzf.fish) 讓你的 Fish 互動性更強大。
 
 找檔案 <kbd>Ctrl + Alt + F</kbd>
 
@@ -228,8 +193,6 @@ fisher install jorgebucaran/autopair.fish
 
 ### 安裝前置套件 fzf
 
-shell 輸入
-
 ```shell
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 ~/.fzf/install
@@ -237,15 +200,11 @@ git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 
 ### 安裝前置套件 fd
 
-shell 輸入
-
 ```shell
 sudo apt install fd-find
 ```
 
 因為已經有其他叫 fd 的套件，為了避免衝突，所以執行檔是叫 fdfind。我們這邊建立個連結在 `/usr/local/bin` 叫做 `fd` 讓我們可以使用 `fd` 這個指令。
-
-shell 輸入
 
 ```shell
 sudo ln -s $(which fdfind) /usr/local/bin/fd
@@ -253,23 +212,17 @@ sudo ln -s $(which fdfind) /usr/local/bin/fd
 
 ### 安裝前置套件 bat
 
-shell 輸入
-
 ```shell
 sudo apt install bat
 ```
 
 因為已經有其他叫 bat 的套件，為了避免衝突，所以執行檔是叫 batcat。我們這邊建立個連結在 `/usr/local/bin` 叫做 `bat` 讓我們可以使用 `bat` 這個指令。
 
-shell 輸入
-
 ```shell
 sudo ln -s $(which batcat) /usr/local/bin/bat
 ```
 
 ### 安裝 fzf.fish
-
-shell 輸入
 
 ```shell
 fisher install PatrickF1/fzf.fish
@@ -278,8 +231,6 @@ fisher install PatrickF1/fzf.fish
 ## 設定 asdf 自動完成
 
 若已經有安裝使用 [asdf](https://asdf-vm.com/) 軟體版本管理器，設定自動完成如下
-
-shell 輸入
 
 ```shell
 vi ~/.config/fish/config.fish
@@ -291,16 +242,10 @@ vi ~/.config/fish/config.fish
 source ~/.asdf/asdf.fish
 ```
 
-最後，shell 輸入以下指令，連結自動完成的功能
+最後，輸入以下指令，連結自動完成的功能
 
 ```shell
 mkdir -p ~/.config/fish/completions; and ln -s ~/.asdf/completions/asdf.fish ~/.config/fish/completions
 ```
-
-## 最後
-
-安裝過程我個人覺得應該比 zsh 稍微簡單一些。
-
-不知道各位同學嘗試之後，覺得跟 zsh 比較，哪個用起來比較舒服呢? 留言讓我知道 😀
 
 ## 完結
